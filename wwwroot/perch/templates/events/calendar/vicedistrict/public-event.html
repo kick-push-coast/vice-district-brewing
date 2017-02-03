@@ -1,0 +1,120 @@
+<perch:before>
+    <div class="eventwrap eventcell <perch:if id="category_slugs" match="contains" value="private-event">privateevent</perch:if> <perch:if id="category_slugs" match="contains" value="festival">festivalevent</perch:if>">
+    <span class="day"><perch:events id="eventDateTime" format="j" /></span>
+</perch:before>
+
+<!-- Modal Trigger -->
+<div class="vevent event <perch:if id="category_slugs" match="contains" value="private-event">privateeventtrigger</perch:if><perch:if id="category_slugs" match="contains" value="festival">festivaleventtrigger</perch:if>">
+   <perch:if id="category_slugs" match="contains" value="public-event">
+      <button type="" class="btn" data-toggle="modal" data-target="#<perch:events id="eventSlug" />"><span class="time dtstart"><span class="value-title" title="<perch:events id="eventDateTime" format="c" />"><perch:events id="eventDateTime" format="%l:%M%p" /></span> </span>
+   </br><span class="summary <perch:events id="category_slugs" />"><perch:events id="eventTitle" /></span>
+      </button>
+
+   <perch:else />
+
+   <perch:if id="category_slugs" match="contains" value="festival">
+      <div>Festival</div>
+      <button type="" class="btn" data-toggle="modal" data-target="#<perch:events id="eventSlug" />"><span class="time dtstart"><span class="value-title" title="<perch:events id="eventDateTime" format="c" />"><perch:events id="eventDateTime" format="%l:%M%p" /></span> </span>
+   </br><span class="summary <perch:events id="category_slugs" />"><perch:events id="eventTitle" /></span>
+      </button>
+   </perch:if>
+
+   </perch:if>
+   <perch:if id="category_slugs" match="contains" value="private-event">
+      <div>Private Event</div>
+      <div>
+         <span class="time dtstart">
+            <span class="value-title" title="<perch:events id="eventDateTime" format="c" />">
+               <perch:events id="eventDateTime" format="%l:%M%p" />
+               <perch:if id="eventShowEndTime" value="1">
+                  <perch:events id="eventDateTimeEnd" format="- g:ia"/>
+               </perch:if>
+            </span>
+         </span>
+      </div>
+      <div>Taproom Reserved</div>
+   </perch:if>
+</div>
+
+<!-- Modal -->
+<perch:if id="category_slugs" match="contains" value="public-event">
+
+<div class="modal fade" id="<perch:events id="eventSlug" />" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+   <div class="modal-dialog" role="document">
+      <div class="modal-content">
+         <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+            <h1 class="modal-title" id="myModalLabel"><perch:events id="eventTitle" /></h1>
+            <h2>
+               <perch:events id="eventDateTime" format="g:ia" />
+               <perch:if id="eventShowEndTime" value="1">
+                  <perch:events id="eventDateTimeEnd" format="- g:ia"/>
+               </perch:if>
+               <perch:events id="eventDateTime" format=" l, F jS Y" />
+            </h2>
+         </div>
+         <div class="modal-body">
+            <p>
+               <perch:events id="eventDescHTML" encode="false" />
+            </p>
+            <perch:if exists="image">
+            <div class="modalimgcontain">
+                <img class="img-responsive" src="<perch:events id="image" type="image" label="Image (optional)" width="640" crop="true" />" alt="<perch:events id="eventTitle" />" />
+            </div>
+            <perch:else />
+            <perch:if exists="eventIcon">
+            <div class="modalimgcontain">
+                <img class="img-responsive" src="<perch:events id="eventIcon" type="image"/>" alt="<perch:events id="eventTitle" />" />
+            </div>
+            </perch:if>
+            </perch:if>
+         </div>
+      </div>
+   </div>
+</div>
+
+<perch:else />
+
+<perch:if id="category_slugs" match="contains" value="festival">
+
+<div class="modal fade" id="<perch:events id="eventSlug" />" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+   <div class="modal-dialog" role="document">
+      <div class="modal-content">
+         <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+            <h1 class="modal-title" id="myModalLabel"><perch:events id="eventTitle" /></h1>
+            <h2>
+               <perch:events id="eventDateTime" format="g:ia" />
+               <perch:if id="eventShowEndTime" value="1">
+                  <perch:events id="eventDateTimeEnd" format="- g:ia"/>
+               </perch:if>
+               <perch:events id="eventDateTime" format=" l, F jS Y" />
+            </h2>
+            <perch:if exists="eventLocation">
+               <h2><perch:events id="eventLocation"/></h2>
+            </perch:if>
+         </div>
+         <div class="modal-body">
+            <p>
+               <perch:events id="eventDescHTML" encode="false" />
+            </p>
+            <perch:if exists="image">
+            <div class="modalimgcontain">
+                <img class="img-responsive" src="<perch:events id="image" type="image" label="Image (optional)" width="640" crop="true" />" alt="<perch:events id="eventTitle" />" />
+            </div>
+            <perch:else />
+            <perch:if exists="eventIcon">
+            <div class="modalimgcontain">
+                <img class="img-responsive" src="<perch:events id="eventIcon" type="image"/>" alt="<perch:events id="eventTitle" />" />
+            </div>
+            </perch:if>
+            </perch:if>
+         </div>
+      </div>
+   </div>
+</div>
+</perch:if>
+
+</perch:if>
+
+<perch:after></div></perch:after>

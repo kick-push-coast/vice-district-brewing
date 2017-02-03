@@ -1,0 +1,22 @@
+<div class="col-xs-4 cardwrap">
+   <div class="card">
+      <div class="card-title">
+         <a data-toggle="collapse" href="#<perch:content id="perch_item_index" type="hidden" />" aria-expanded="false" aria-controls="<perch:content id="perch_item_index" type="hidden" />">
+            <img class="card-img-top img-responsive" src="<perch:content id="beericon" type="image" label="Photo" help="Photo must have 16:9 aspect ratio"/>" alt="Card image cap">
+            <div class="card-block">
+               <h1 class="card-title"><perch:content id="stapletitle" type="text" label="Title"/></h1>
+               <h4><perch:content id="staplestyle" type="text" label="Style"/></h4>
+            </div>
+            <span class="glyphicon glyphicon-chevron-down pull-down-glyph" aria-hidden="true"></span>
+         </a>
+      </div>
+      <div class="cardcollapse collapse" id="<perch:content id="perch_item_index" type="hidden" />">
+         <p class="card-text"><perch:content id="stapledescription" type="textarea" label="Description" chars="400" help="400 Character Limit"/></p>
+
+         <ul class="list-group list-group-flush">
+            <li class="list-group-item text-center"><perch:content id="stapleabv" type="text" label="ABV"/>% ABV</li>
+            <li class="list-group-item text-center"><perch:content id="stapleibu" type="text" label="IBU"/> IBU</li>
+         </ul>
+      </div>
+   </div>
+</div>

@@ -1,0 +1,13 @@
+
+   <div class="publiccalendar">
+      <h2><a class="paging-prev" href="?d=<perch:events id="prev_month" format="Y-m" />"><span class="glyphicon glyphicon-chevron-left"></span> </a><perch:events id="selected_month" format="%B %Y" /><a class="paging-next" href="?d=<perch:events id="next_month" format="Y-m" />"> <span class="glyphicon glyphicon-chevron-right"></a></h2>
+
+      <table class="calendar">
+          <thead>
+              <perch:events id="header" encode="false" />
+          </thead>
+          <tbody>
+              <perch:events id="body" encode="false" />
+          </tbody>
+      </table>
+   </div>

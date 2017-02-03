@@ -1,0 +1,24 @@
+<div class="vevent">
+    <h2 class="summary"><perch:events id="eventTitle" /></h2>
+
+    <p class="dtstart"><span class="value-title" title="<perch:events id="eventDateTime" format="c" />"><perch:events id="eventDateTime" format="%c" /></span></p>
+
+    <perch:events id="eventShowEndTime" type="checkbox" label="Show End Time" help="Check this if you want the end time displayed in the event details" value="1" suppress="true" />
+
+    <span class="dtend"><perch:events id="eventDateTimeEnd" type="date" time="true" label="End Time"/></span>
+
+    <div class="description"><perch:events id="eventDescHTML" type="textarea" textile="true" editor="markitup" encode="false" /></div>
+
+    <p class="category"><perch:events id="category_names" encode="false"/></p>
+
+    <perch:events id="eventLocation" type="text" label="Location (optional)"/>
+
+    <perch:if exists="image">
+        <img src="<perch:events id="image" type="image" label="Image (optional)" width="640" crop="true" />" alt="<perch:events id="eventTitle" />" />
+    </perch:if>
+
+    <perch:if exists="image">
+        <img src="<perch:events id="eventIcon" type="image" label="Icon" crop="true" help="Use an appropriate 250x250 icons from the assets bank here."/>" alt="<perch:events id="eventTitle" />" />
+    </perch:if>
+
+</div>
