@@ -526,7 +526,9 @@ html {
 
 .taproomleft blockquote {
 	margin: 1vw 2vw;
-	font-size: 1vw;
+	font-size: 1.2vw;
+	font-style: italic;
+	color: #dbae51;
 }
 
 .taproomright {

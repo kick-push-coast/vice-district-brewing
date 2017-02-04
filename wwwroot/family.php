@@ -175,90 +175,14 @@
       <?php perch_content('Owners Info'); ?>
 
       <div class="salesblock">
-         <div class="salesemployee">
-            <div class="salesimg">
-               <img class="img-responsive" src="images/staffphotos/emily_o.jpg"/>
-            </div>
-            <div class="salesinfo">
-               <h3>Emily O.</h3>
-               <h4>Sales & Marketing</h4>
-               <div>Favorite Beer: Habitual</div>
-               <div>Email: marketing@vicedistricbrewing.com</div>
-            </div>
-         </div>
-         <div class="salesemployee">
-            <div class="salesimg">
-               <img class="img-responsive" src="images/staffphotos/diego.jpg"/>
-            </div>
-            <div class="salesinfo">
-               <h3>Diego</h3>
-               <h4>Brewery Ambassador & Marketing</h4>
-               <div>Favorite Beer: Metrosexual</div>
-               <div>Email: diego@vicedistricbrewing.com</div>
-            </div>
-         </div>
+
+         <?php perch_content('Sales/Marketing Info'); ?>
+
       </div>
       <div class="bartendersblock">
-         <div class="bartender">
-            <img src="images/staffphotos/antwan.jpg" class="img-responsive"/>
-            <h3>Antwan</h3>
-            <h4>Bartender</h4>
-            <span>Favorite Beer: Habitual</span>
-         </div>
-         <div class="bartender">
-            <img src="images/staffphotos/bweza.jpg" class="img-responsive"/>
-            <h3>Bweza</h3>
-            <h4>Bartender</h4>
-            <span>Favorite Beer: Red Headed Stunt Dubbel</span>
-         </div>
-         <div class="bartender">
-            <img src="images/staffphotos/janelle.jpg" class="img-responsive"/>
-            <h3>Janelle</h3>
-            <h4>Bartender</h4>
-            <span></span>
-         </div>
-         <div class="bartender">
-            <img src="images/staffphotos/mary.jpg" class="img-responsive"/>
-            <h3>Mary</h3>
-            <h4>Bartender</h4>
-            <span></span>
-         </div>
-         <div class="bartender">
-            <img src="images/staffphotos/emily_r.jpg" class="img-responsive"/>
-            <h3>Emily R.</h3>
-            <h4>Bartender</h4>
-            <span></span>
-         </div>
-         <div class="bartender">
-            <img src="images/staffphotos/christal.jpg" class="img-responsive"/>
-            <h3>Christal</h3>
-            <h4>Bartender</h4>
-            <span>Favorite Beer: Habitual</span>
-         </div>
-         <div class="bartender">
-            <img src="images/staffphotos/cody.jpg" class="img-responsive"/>
-            <h3>Cody</h3>
-            <h4>Bartender</h4>
-            <span>Favorite Beer: Cluster</span>
-         </div>
-         <div class="bartender">
-            <img src="images/staffphotos/sylvia.jpg" class="img-responsive"/>
-            <h3>Sylvia</h3>
-            <h4>Bartender</h4>
-            <span></span>
-         </div>
-         <div class="bartender">
-            <img src="images/staffphotos/christine.jpg" class="img-responsive"/>
-            <h3>Christine</h3>
-            <h4>Bartender</h4>
-            <span></span>
-         </div>
-         <div class="bartender">
-            <img src="images/staffphotos/noemi.jpg" class="img-responsive"/>
-            <h3>Noemi</h3>
-            <h4>Bartender</h4>
-            <span>Favorite Beer: Cluster</span>
-         </div>
+
+         <?php perch_content('Bartenders Info'); ?>
+
       </div>
 
 	</div>
