@@ -172,44 +172,8 @@
 			</div>
 		</div>
 
-      <div class="ownersblock">
-         <div class="ownersleft container">
-            <div class="row vertflex">
-               <img class="col-xs-6" src="images/staffphotos/q.jpeg"/>
-               <img class="col-xs-6" src="images/staffphotos/curtis.jpg"/>
-            </div>
-            <div class="row vertflex">
-               <img class="col-xs-12" src="images/staffphotos/curtis_q_aydan.jpg"/>
-            </div>
-            <div class="row vertflex">
-               <img class="col-xs-12" src="images/staffphotos/aydan.jpg"/>
-            </div>
-         </div>
-         <div class="ownersright">
-            <h1>Our Family</h1>
-            <div>
-               <div class="vertflex">
-               <p>
-                  <h3>Quintin Cole and Curtis Tarver, co-owners of Vice District Brewing</h3>
-                  Quintin Cole and Curtis Tarver created Vice District Brewing as a place for people to come together, relax with one another, and to help foster an environment of diversity and inclusion on Chicago’s Southside. It is not uncommon to see both co-owners at the taproom on any given evening, putting in work over a beer or reconnecting with the community.
+      <?php perch_content('Owners Info'); ?>
 
-                  <blockquote>“I especially enjoy the taproom. I enjoy being able to come in and see new people and reconnect with others. I also enjoy seeing something that was a simple basement recipe improved upon and served in the taproom. It is fun to see how recipes change and how people react.”</blockquote>
-
-                  Quintin works full time as the Regional Vice President for Integrity Rehab Group, which specializes in providing onside out-patient Physical and Occupational Therapy services for medical practices. Curtis is a shareholder at Saulter Tarver P.C., where he specializes in plaintiff’s catastrophic injury and complex litigation for the Chicago-land area.
-
-               </p>
-               </div>
-               <div class="vertflex">
-               <p>
-                  <h3>Aydan Connor, Head Brewer of Vice District Brewing</h3>
-                  Aydan initially moved to the Midwest in 2004 from Pleasanton, CA in pursuit of a degree in trombone performance at Northwestern University. He relocated to Eugene, OR in 2011 and took a job at Falling Sky Fermentation Supply Shop to immerse himself into the craft of brewing. In 2012, Aydan moved back to Chicago and took a position as manager of Brew & Grow in Chicago. Since then, Aydan set up and worked as head brewer at a nano-brewery for Pleasant House in Southwest, MI (2013) and came back to Chicago to be Head Brewer at Motor Row Brewing (2014) under guidance of his long-time mentor. In January of 2016, Aydan became the Head Brewer of Vice District Brewing.
-
-                  <blockquote>“Brewing is everything that I was looking for in a career. It satisfies my interest in fermentation science, artistic taste, engineering, problem solving, physical labor, and…beer! I think of beer as performance in a glass — like making music, brewing allows you to practice towards perfect — it is this drive that excites me about making beer day in and day out.”</blockquote>
-               </p>
-               </div>
-            </div>
-         </div>
-      </div>
       <div class="salesblock">
          <div class="salesemployee">
             <div class="salesimg">
