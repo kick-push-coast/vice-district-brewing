@@ -34,6 +34,23 @@
   </head>
   <body>
 
+     <div class="modal fade" id="ageModal" tabindex="-1" role="dialog" aria-labelledby="ageModalLabel" aria-hidden="true">
+       <div class="modal-dialog" role="document">
+          <div class="modal-content">
+             <div class="modal-header">
+                <img class="img-responsive center-block" src="images/centerlogo.png"/>
+             </div>
+             <div class="modal-body">
+                <p id="ageVerifyMessage">Are you 21 years of age or older?</p>
+             </div>
+             <div class="modal-footer">
+                <button type="button" class="btn btn-primary" id="ageVerified">Yes</button>
+                <button type="button" class="btn btn-secondary" id="ageNotVerified">No</button>
+             </div>
+          </div>
+      </div>
+   </div>
+
      <div id="fixedbanner" class="fixedbanner hidden-xs">
        <div class="fixedflex">
  				<div class="fixedlink fixedimglink">
@@ -211,7 +228,9 @@
          <div class="reservationleft">
             <h1 class="calendarheader nomargin" id="privateeventform">Reserve The Taproom</h1>
             <div class="vertalignp">
-               <?php perch_content('Reservations Message'); ?>
+               <div class="sectionparagraph">
+                  <?php perch_content('Reservations Message'); ?>
+               </div>
             </div>
          </div>
          <div class="reservationright">
@@ -224,9 +243,17 @@
                  <label for="partyemail">Email address</label>
                  <input type="email" class="form-control" id="partyemail" required>
                </div>
-              <div class="form-group">
-                <label for="partyorg">Organization (optional)</label>
-                <input type="text text-left" class="form-control" id="partyorg">
+              <div class="form-group organizationform">
+                <div>
+                   <label for="partyorg">Organization (optional)</label>
+                   <input type="text text-left" class="form-control" id="partyorg">
+                </div>
+                <div>
+                   <label for="nfpcheck">Are you a 501(c)3 nonprofit?</label>
+                   <input type="checkbox" id="nfpcheck" onchange='nfpCheck(this);'>
+                   <label for="nfpproof" style="visibility:hidden;color:#dbae51;" id="nfpprooflabel">Please provide proof:</label>
+                   <input type="file" name="fileToUpload" id="nfpproof" style="visibility:hidden;">
+                </div>
               </div>
               <div class="form-group">
                 <label for="partydate">Reservation Date</label>
@@ -247,7 +274,9 @@
          <div class="reservationleft">
             <h1 class="calendarheader nomargin">Beer Festivals</h1>
             <div class="vertalignp">
+               <div class="sectionmessage">
                   <?php perch_content('Festivals Message'); ?>
+               </div>
                   <?php
                      perch_events_custom(array(
                          'filter' => 'eventDateTime',

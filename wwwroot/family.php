@@ -34,6 +34,23 @@
   </head>
   <body>
 
+     <div class="modal fade" id="ageModal" tabindex="-1" role="dialog" aria-labelledby="ageModalLabel" aria-hidden="true">
+       <div class="modal-dialog" role="document">
+          <div class="modal-content">
+             <div class="modal-header">
+                <img class="img-responsive center-block" src="images/centerlogo.png"/>
+             </div>
+             <div class="modal-body">
+                <p id="ageVerifyMessage">Are you 21 years of age or older?</p>
+             </div>
+             <div class="modal-footer">
+                <button type="button" class="btn btn-primary" id="ageVerified">Yes</button>
+                <button type="button" class="btn btn-secondary" id="ageNotVerified">No</button>
+             </div>
+          </div>
+      </div>
+   </div>
+
      <div id="fixedbanner" class="fixedbanner hidden-xs">
        <div class="fixedflex">
  				<div class="fixedlink fixedimglink">
@@ -183,6 +200,21 @@
 
          <?php perch_content('Bartenders Info'); ?>
 
+      </div>
+
+      <div class="privateformwrap" id="joblisting">
+         <div class="reservationleft">
+            <h1 class="calendarheader nomargin">Work With Us</h1>
+            <div class="vertalignp">
+               <div class="sectionmessage">
+                  <?php perch_content('Jobs Message'); ?>
+               </div>
+                  <?php perch_content('Jobs Listing');?>
+            </div>
+         </div>
+         <div class="reservationright">
+            <img src='images/staffphotos/team.jpg' class='img-responsive'/>
+         </div>
       </div>
 
 	</div>

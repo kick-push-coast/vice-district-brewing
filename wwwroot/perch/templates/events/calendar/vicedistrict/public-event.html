@@ -4,8 +4,9 @@
 </perch:before>
 
 <!-- Modal Trigger -->
-<div class="vevent event <perch:if id="category_slugs" match="contains" value="private-event">privateeventtrigger</perch:if><perch:if id="category_slugs" match="contains" value="festival">festivaleventtrigger</perch:if>">
+<div class="vevent event publiceventtrigger <perch:if id="category_slugs" match="contains" value="private-event">privateeventtrigger</perch:if><perch:if id="category_slugs" match="contains" value="festival">festivaleventtrigger</perch:if>">
    <perch:if id="category_slugs" match="contains" value="public-event">
+      <div>Public Event</div>
       <button type="" class="btn" data-toggle="modal" data-target="#<perch:events id="eventSlug" />"><span class="time dtstart"><span class="value-title" title="<perch:events id="eventDateTime" format="c" />"><perch:events id="eventDateTime" format="%l:%M%p" /></span> </span>
    </br><span class="summary <perch:events id="category_slugs" />"><perch:events id="eventTitle" /></span>
       </button>
@@ -52,11 +53,17 @@
                </perch:if>
                <perch:events id="eventDateTime" format=" l, F jS Y" />
             </h2>
+            <perch:if exists="eventLocation">
+               <h2 class="eventlocation"><perch:events id="eventLocation"/></h2>
+            </perch:if>
          </div>
          <div class="modal-body">
             <p>
                <perch:events id="eventDescHTML" encode="false" />
             </p>
+            <perch:if exists="eventLinkURL">
+               <a href="<perch:events id="eventLinkURL" type="text" label="Event Link URL (optional)" />"><perch:events id="eventLinkURLTitle" type="text" label="Link URL Label (optional)" help="This will be the link text that is displayed on the page" /></a>
+            </perch:if>
             <perch:if exists="image">
             <div class="modalimgcontain">
                 <img class="img-responsive" src="<perch:events id="image" type="image" label="Image (optional)" width="640" crop="true" />" alt="<perch:events id="eventTitle" />" />
@@ -91,13 +98,16 @@
                <perch:events id="eventDateTime" format=" l, F jS Y" />
             </h2>
             <perch:if exists="eventLocation">
-               <h2><perch:events id="eventLocation"/></h2>
+               <h2 class="eventlocation"><perch:events id="eventLocation"/></h2>
             </perch:if>
          </div>
          <div class="modal-body">
             <p>
                <perch:events id="eventDescHTML" encode="false" />
             </p>
+            <perch:if exists="eventLinkURL">
+               <a href="<perch:events id="eventLinkURL" type="text" label="Event Link URL (optional)" />"><perch:events id="eventLinkURLTitle" type="text" label="Link URL Label (optional)" help="This will be the link text that is displayed on the page" /></a>
+            </perch:if>
             <perch:if exists="image">
             <div class="modalimgcontain">
                 <img class="img-responsive" src="<perch:events id="image" type="image" label="Image (optional)" width="640" crop="true" />" alt="<perch:events id="eventTitle" />" />
@@ -105,7 +115,7 @@
             <perch:else />
             <perch:if exists="eventIcon">
             <div class="modalimgcontain">
-                <img class="img-responsive" src="<perch:events id="eventIcon" type="image"/>" alt="<perch:events id="eventTitle" />" />
+                <img class="img-responsive" src="<perch:events id="eventIcon" type="image" required="true"/>" alt="<perch:events id="eventTitle" />" />
             </div>
             </perch:if>
             </perch:if>

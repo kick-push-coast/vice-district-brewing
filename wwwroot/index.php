@@ -34,20 +34,37 @@
   </head>
   <body>
 
-	<div id="fixedbanner" class="fixedbanner hidden-xs">
-      <div class="fixedflex">
-				<div class="fixedlink fixedimglink">
-               <a href="index.php">
-                  <img src="images/fixedlogoskyline.png" class="img-responsive fixedimg">
-               </a>
-            </div>
-				<div class="fixedlink ">
-					<div class="row fixedpadding"></div>
-					<a href="taproom.php">
-						<div class="fixedtext">
-							Taproom
-						</div>
-					</a>
+     <div class="modal fade" id="ageModal" tabindex="-1" role="dialog" aria-labelledby="ageModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+           <div class="modal-content">
+             <div class="modal-header">
+                <img class="img-responsive center-block" src="images/centerlogo.png"/>
+             </div>
+             <div class="modal-body">
+                <p id="ageVerifyMessage">Are you 21 years of age or older?</p>
+             </div>
+             <div class="modal-footer">
+                <button type="button" class="btn btn-primary" id="ageVerified">Yes</button>
+                <button type="button" class="btn btn-secondary" id="ageNotVerified">No</button>
+             </div>
+          </div>
+       </div>
+    </div>
+
+     <div id="fixedbanner" class="fixedbanner hidden-xs">
+        <div class="fixedflex">
+           <div class="fixedlink fixedimglink">
+             <a href="index.php">
+                <img src="images/fixedlogoskyline.png" class="img-responsive fixedimg">
+             </a>
+          </div>
+          <div class="fixedlink ">
+             <div class="row fixedpadding"></div>
+             <a href="taproom.php">
+                <div class="fixedtext">
+                  Taproom
+               </div>
+            </a>
 				</div>
 				<div class="fixedlink ">
 					<div class="row fixedpadding"></div>
@@ -203,7 +220,7 @@
 			<div class="row">
 				<div class="hidden-xs col-sm-4">
 					<div class="row"><div class="col-xs-12" style="padding-right: 0px;"><img class="img-responsive" src="images/mosaic1.png"></div></div>
-					<div class="row"><div class="col-xs-12" style="padding-right: 0px;"><img class="img-responsive" src="images/mosaic4.png"></div></div>
+					<div class="row"><div class="col-xs-12" style="padding-right: 0px;"><img class="img-responsive" src="images/mosaic4-2.png"></div></div>
 				</div>
 				<div class="col-xs-12 col-sm-8">
 					<div class="row">
@@ -295,6 +312,16 @@
 					</div>
 				</div>
 			</div>
+
+         <div class="bottompanelsflex">
+            <div class="bottompanels">
+               <a href="family.php#joblisting"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>Work With Us</a>
+            </div>
+            <div class="bottompanels">
+               <a href="contact.php#FAQs">FAQs<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+            </div>
+         </div>
+
 		</div>
 		</div>
 

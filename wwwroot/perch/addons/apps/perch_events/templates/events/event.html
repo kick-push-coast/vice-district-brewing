@@ -13,6 +13,10 @@
 
     <perch:events id="eventLocation" type="text" label="Location (optional)"/>
 
+    <perch:if exists="eventLinkURL">
+      <a href="<perch:events id="eventLinkURL" type="text" label="Event Link URL (optional)" />"><perch:events id="eventLinkURLTitle" type="text" label="Link URL Label" help="This will be the link text that is displayed on the page" /></a>
+    </perch:if>
+
     <perch:if exists="image">
         <img src="<perch:events id="image" type="image" label="Image (optional)" width="640" crop="true" />" alt="<perch:events id="eventTitle" />" />
     </perch:if>

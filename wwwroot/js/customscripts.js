@@ -23,12 +23,6 @@ $(function() {
 			}
 		}
 
-		// if (($(window).scrollTop() > bannerheight) && hidesignup==0) {
-		// 	$('#emailsignup').css('marginRight', '-34vmax');
-		// }
-		// else if (($(window).scrollTop() == 0) && hidesignup==0) {
-		// 	$('#emailsignup').stop().animate({marginRight:'0'},800);
-		// }
 	});
 
 	$(window).resize(function(){
@@ -54,13 +48,13 @@ $(function() {
 	});
 
 	$('.bannerbottom a').each(function() {
-		if ($(this).prop('href') == window.location.href.split('?')[0]) {
+		if ($(this).prop('href') == [location.protocol, '//', location.host, location.pathname].join('')) {
 		  $('li', this).attr('style', 'border-bottom: 2px solid rgba(255, 255, 255, 1) !important;');
 		}
 	});
 
 	$('.fixedlink a').each(function() {
-		if ($(this).prop('href') == window.location.href.split('?')[0]) {
+		if ($(this).prop('href') == [location.protocol, '//', location.host, location.pathname].join('')) {
 		  $('.fixedtext', this).attr('style', 'border-bottom: 2px solid rgba(255, 255, 255, 1) !important;');
 		}
 	});
@@ -71,13 +65,64 @@ $(function() {
 		hidesignup = 1;
 	});
 
+	function getCookie(name) {
+		var dc = document.cookie;
+		var prefix = name + "=";
+		var begin = dc.indexOf("; " + prefix);
+		if (begin == -1) {
+			begin = dc.indexOf(prefix);
+			if (begin != 0) return null;
+		}
+		else
+		{
+			begin += 2;
+			var end = document.cookie.indexOf(";", begin);
+			if (end == -1) {
+				end = dc.length;
+			}
+		}
+		return decodeURI(dc.substring(begin + prefix.length, end));
+	}
+
+	function createCookie(name,value,days) {
+		var expires = "";
+		if (days) {
+			var date = new Date();
+			date.setTime(date.getTime() + (days*24*60*60*1000));
+			expires = "; expires=" + date.toUTCString();
+		}
+		document.cookie = name + "=" + value + expires + "; path=/";
+	}
+
+	document.getElementById("ageVerified").addEventListener("click", function(){
+		createCookie('verifiedAgeVDB','true',10);
+		$("#ageModal").modal('hide');
+	});
+
+	document.getElementById("ageNotVerified").addEventListener("click", function(){
+		document.getElementById("ageVerified").style.display = "none";
+		document.getElementById("ageNotVerified").style.display = "none";
+		document.getElementById("ageVerifyMessage").innerHTML = "You must be 21+ to enter the site.";
+	});
+
+
+
 	$(document).ready(function(){
 		setTimeout(function() {
 			$('#emailsignup').animate({marginRight:'0'},1100);
 		},400);
+
+		var ageCookie = getCookie("verifiedAgeVDB");
+
+		if (ageCookie == null) {
+			$('#ageModal').modal({
+				backdrop: 'static',
+				keyboard: false
+			});
+			$("#ageModal").modal('show');
+		}
+
 	});
-
-
 
 	var fixedCls = '.fixedbanner';
    var oldSSB = $.fn.modal.Constructor.prototype.setScrollbar;
@@ -94,3 +139,16 @@ $(function() {
    }
 
 });
+
+function nfpCheck(checkbox) {
+	if(checkbox.checked == true) {
+		document.getElementById("nfpproof").style.visibility = "visible";
+		document.getElementById("nfpprooflabel").style.visibility = "visible";
+		document.getElementById("nfpproof").required = true;
+	}
+	else {
+		document.getElementById("nfpproof").style.visibility = "hidden";
+		document.getElementById("nfpprooflabel").style.visibility = "hidden";
+		document.getElementById("nfpproof").required = false;
+	}
+}

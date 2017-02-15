@@ -1,0 +1,35 @@
+<perch:before>
+   <ul>
+</perch:before>
+
+<li>
+   <button type="" class="btn" data-toggle="modal" data-target="#<perch:content id="perch_item_index" type="hidden"/>">
+      <perch:content id="jobTitle" type="text" label="Job Title" required="true" /> - <perch:content id="jobLocation" type="select" label="Location"
+options="South Loop, Homewood" allowempty="false" required="true" />
+   </button>
+
+   <div class="modal fade" id="<perch:content id="perch_item_index" type="hidden"/>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+         <div class="modal-content">
+            <div class="modal-header">
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+               <h1 class="modal-title" id="myModalLabel"><perch:content id="jobTitle" /></h1>
+               <h2>
+                  <perch:content id="jobFrequency" type="select" label="Frequency"
+   options="Full-time, Part-time" allowempty="false" required="true" /> - <perch:content id="jobLocation" type="select" label="Frequency"
+options="South Loop, Homewood" allowempty="false" required="true" />
+               </h2>
+            </div>
+            <div class="modal-body">
+               <p>
+                  <perch:content id="jobDescription" type="textarea" label="Description" editor="redactor" html="true" required="true" />
+               </p>
+            </div>
+         </div>
+      </div>
+   </div>
+</li>
+
+<perch:after>
+   </ul>
+</perch:after>

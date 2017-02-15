@@ -5,6 +5,7 @@ var polylineOptionsDotted;
 var polylineOptionsSolid;
 var lineSymbol;
 var viceDistrict = {lat: 41.862492, lng: -87.624035};
+var viceDistrictHomewood = {lat: 41.561994, lng: -87.665026};
 var soldierField = {lat: 41.862305, lng: -87.616699};
 var mccormickPlace = {lat: 41.850886, lng: -87.618916};
 var unitedCenter = {lat: 41.881334, lng: -87.674185};
@@ -45,8 +46,35 @@ $(document).ready(function () {
 	  $(this).addClass('selectedorigin');
 	  updateMap(rooseveltStation, 'WALKING');
 	});
+   $("#centerhomewood").on('click', function ()
+   {
+      if (lastMarker != null) {
+			lastMarker.setMap(null);
+		}
+      document.getElementById('homewood').style = "border: 1px solid #dbae51;"
+      document.getElementById('southloop').style = "border: 1px solid rgba(0,0,0,0);"
+      directionsDisplay.set('directions', null);
+      map.setCenter(viceDistrictHomewood);
+  	   $("a.selectedorigin").removeClass('selectedorigin');
+      document.getElementById('nearbyVenues').style.visibility = 'hidden';
+      document.getElementById('nearbyPublicTransit').style.visibility = 'hidden';
+      document.getElementById('address').innerHTML = "18027 Dixie Hwy</br>Homewood, IL 60430";
+      document.getElementById('address').href = "https://www.google.com/maps/place/18027+Dixie+Hwy,+Homewood,+IL+60430/@41.5619978,-87.6672312,17z/data=!3m1!4b1!4m5!3m4!1s0x880e18668577bbe3:0xf42310113a284038!8m2!3d41.5619978!4d-87.6650425";
+   });
+   $("#centersouthloop").on('click', function ()
+   {
+      document.getElementById('southloop').style = "border: 1px solid #dbae51;"
+      document.getElementById('homewood').style = "border: 1px solid rgba(0,0,0,0);"
+      directionsDisplay.set('directions', null);
+  	   $("a.selectedorigin").removeClass('selectedorigin');
+      map.setCenter(viceDistrict);
+      document.getElementById('nearbyVenues').style.visibility = 'visible';
+      document.getElementById('nearbyPublicTransit').style.visibility = 'visible';
+      document.getElementById('address').innerHTML = "1454 S Michigan Ave</br>Chicago, IL 60605";
+      document.getElementById('address').href = "https://www.google.com/maps/place/Vice+District+Brewing+Company/@41.8624994,-87.6265913,17z/data=!3m1!4b1!4m5!3m4!1s0x880e2c8464f6131d:0x3907d1208eaa2804!8m2!3d41.8624994!4d-87.6244026";
+   });
 });
-		
+
 function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
           center: viceDistrict,
@@ -132,25 +160,32 @@ function initMap() {
             }
           ]
         });
-		
+
 		marker = new google.maps.Marker({
 			map: map,
 			draggable: false,
 			position: viceDistrict,
 			icon: "images/mapicons/viceicon.png"
 		});
-		
+
+      homewoodmarker = new google.maps.Marker({
+         map: map,
+         draggable: false,
+         position: viceDistrictHomewood,
+			icon: "images/mapicons/viceicon.png"
+      })
+
 		directionsDisplay = new google.maps.DirectionsRenderer({
 			map: map,
 			suppressMarkers: true
 		});
-		
+
 		lineSymbol = {
 			path: google.maps.SymbolPath.CIRCLE,
 			fillOpacity: 1,
 			scale: 3
 		};
-		
+
 		polylineDotted = new google.maps.Polyline({
 			strokeColor: '#fff',
 			strokeOpacity: 0,
@@ -169,30 +204,30 @@ function initMap() {
 
 
 function updateMap(newOrigin, travelMode) {
-	
-		
+
+
 		directionsDisplay.setDirections({routes: []});
-				
+
 		if (travelMode == 'WALKING') {
 			directionsDisplay.setOptions({polylineOptions: polylineDotted});
 		}
 		else {
 			directionsDisplay.setOptions({polylineOptions: polylineSolid});
 		}
-		
+
 		if (lastMarker != null) {
 			lastMarker.setMap(null);
 		}
-		
+
 		var newMarker = new google.maps.Marker({
           position: newOrigin,
 		  draggable: false,
           map: map
         });
-		
+
 		lastMarker = newMarker;
-		
-		
+
+
         // Set destination, origin and travel mode.
         var request = {
           destination: viceDistrict,

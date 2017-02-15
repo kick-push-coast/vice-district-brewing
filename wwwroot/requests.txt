@@ -2,58 +2,58 @@ Emily
 
 Events:
 //1. Time for private events shown on calendar for public.​ Yes. ​
-2. Rental request - ask if they are "A registered 501(c)3 nonprofit organization" ​Yes, and they must provide proof when filling out the rental reservation request.​
-3. Icons: White Sox, Bears, Bulls, Blackhawks, -- or general baseball icon, ​​general football, general hockey. Please also add a "tailgate icon" which will be regularly used this Spring! ​We will need to add the Cubs - or we will alienate folks. ​
-4. Link tickets to festivals ​No. Let festivals handle that themselves. We can tell people where we will be but I'm not trying to push ticket sales. ​
+//2. Rental request - ask if they are "A registered 501(c)3 nonprofit organization" ​Yes, and they must provide proof when filling out the rental reservation request.​
+//3. Icons: White Sox, Bears, Bulls, Blackhawks, -- or general baseball icon, ​​general football, general hockey. Please also add a "tailgate icon" which will be regularly used this Spring! ​We will need to add the Cubs - or we will alienate folks. ​
+//4. Link tickets to festivals ​No. Let festivals handle that themselves. We can tell people where we will be but I'm not trying to push ticket sales. ​
 
 General:
 
-I changed the "new on tap" on the "beers" page but it did not update the main page that is "new on tap." Is there way to do this automatically?​ ​
+//I changed the "new on tap" on the "beers" page but it did not update the main page that is "new on tap." Is there way to do this automatically?​ ​
 
 //1. Curtis and Q above the three of them on Family page
-2. Work with Us on Family Page​ - Yes. ​
+//2. Work with Us on Family Page​ - Yes. ​
 //3. If possible, add url for Diego and I's email so they can email directly.
-//4. I'd like to change the font and colors of quotes to make them seperate from content, if possible.
+//4. I'd like to change the font and colors of quotes to make them separate from content, if possible.
 //5. I would like to add emphasis to certain words on the Taproom page (gold?) to draw attention. These are all gold in the doc I sent you.​ I'd need to see it. ​
-6. Add "Are you 21" pop-up...Not sure how to do this.
+//6. Add "Are you 21" pop-up...Not sure how to do this.
 //7. We may need to change the "Who We Are" pic to the one that includes Curtis.​ No need. That's a great pic - if you mean the Christmas photo. I wasn't there - and that's fine. ​
 
 
 Curtis
 
 Home page
-I don't think the picture of me fits. I'd rather see a pic of staff in gear or maybe the picture of the place busy/packed larger.
+//I don't think the picture of me fits. I'd rather see a pic of staff in gear or maybe the picture of the place busy/packed larger.
 
 Family Pics
-I don't like seeing people in the background (i.e. Christal's picture). See if that can be edited. Focus on the person/beer. That's it to me.
+//I don't like seeing people in the background (i.e. Christal's picture). See if that can be edited. Focus on the person/beer. That's it to me.
 
 Beer
-I'd like to still to have our older beers for people to see/review. It can just be a small link to our one off beers, etc. I want people to see that we make tons of beers. Perhaps this can be somewhere under where Q's statement about what beers we make, etc. is...?
+//I'd like to still to have our older beers for people to see/review. It can just be a small link to our one off beers, etc. I want people to see that we make tons of beers. Perhaps this can be somewhere under where Q's statement about what beers we make, etc. is...?
 
 Homewood
-I'd like Homewood address on the site. Even if it just says coming soon. Perhaps we can show pictures of construction on social media too - get people excited about the progress, etc. You can even make it a throwback so they don't know we are behind lol.
+//I'd like Homewood address on the site. Even if it just says coming soon. Perhaps we can show pictures of construction on social media too - get people excited about the progress, etc. You can even make it a throwback so they don't know we are behind lol.
 
 Calendar
-Food trucks, etc. will be on here correct? I'd suggest a link or drop down with the menu so people have an idea of what's being served.
+//Food trucks, etc. will be on here correct? I'd suggest a link or drop down with the menu so people have an idea of what's being served.
 
 Get in Touch
 //Use the info account - not marketing. You will just have to check that account too.
 
 FAQs
-These seem to be buried. I don't know that someone will know to go to Contact Us" then scroll down to the bottom to get their questions answered....
+//These seem to be buried. I don't know that someone will know to go to Contact Us" then scroll down to the bottom to get their questions answered....
 
 
 Q
 
-Family tab:  all of the pictures of staff are in color except for Mary. Doesn't make sense. Please add a color photo of her for uniformity of the page. In addition Jenelle's face is obscured and Bweza's photo is very dark due to back lighting but that is less noticeable than the one obvious black and white.
+//Family tab:  all of the pictures of staff are in color except for Mary. Doesn't make sense. Please add a color photo of her for uniformity of the page. In addition Jenelle's face is obscured and Bweza's photo is very dark due to back lighting but that is less noticeable than the one obvious black and white.
 
 Beers:
-I'm not fond of the pictures of the beers. The filter used for the pictures have a very strong red tint to the backgrounds. The various colors of our beers do not come through on the pictures. They all look copper or dark in color.  The pics look very redundant. I would prefer to see either a bright colorful flight or no pictures of the individual beers.
+//I'm not fond of the pictures of the beers. The filter used for the pictures have a very strong red tint to the backgrounds. The various colors of our beers do not come through on the pictures. They all look copper or dark in color.  The pics look very redundant. I would prefer to see either a bright colorful flight or no pictures of the individual beers.
 
 //Please note Everleigh is an Extra Special Bitter  E.S.B.  not an English Bitter.  There is a distinct difference and with apps like untapped I want to be sure patrons are rating our beer per appropriate style
 
-//Downtown Brown -Nut Brown Ale.    Please remove the Kitchen Sink from the name. Its part of our "Kitchen Sink" series of beer. The Kitchen Sink series are all single batch releases using the left over grains and hops from previous brews. Its a one off beer using available in house ingredients thus preventing unnecessary waste of materials. I think we should high light this somehow so that people are excited whenever we release a new Kitchen Sink release. Please be sure the beer is listed as Downtown Brown -Nut Brown Ale. The style is Nut Brown Ale 
+//Downtown Brown -Nut Brown Ale.    Please remove the Kitchen Sink from the name. Its part of our "Kitchen Sink" series of beer. The Kitchen Sink series are all single batch releases using the left over grains and hops from previous brews. Its a one off beer using available in house ingredients thus preventing unnecessary waste of materials. I think we should high light this somehow so that people are excited whenever we release a new Kitchen Sink release. Please be sure the beer is listed as Downtown Brown -Nut Brown Ale. The style is Nut Brown Ale
 
-the following is content for the paragraph about our beers
+//the following is content for the paragraph about our beers
 
 We are often asked "What type of beers do you specialize in?". Our typical response is "Delicious". We are beer enthusiast period.  Our beers are crafted 100% naturally. We do not filter or pasteurize our beers. We do not focus on any particular style because we want our patrons to experience and experiment all the numerous flavors available in craft beer. With that being said it is important to us that each batch we make has an emphasis on being balanced in its presentation for drinkability. Therefore you will always find a wide selection of rotating and seasonal selections on tap in addition to our staple beers. Regardless if you are a novice or a self proclaimed beer guru, we have beers on tap that will please and delight you.

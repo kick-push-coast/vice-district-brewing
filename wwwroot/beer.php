@@ -34,6 +34,23 @@
   </head>
   <body>
 
+     <div class="modal fade" id="ageModal" tabindex="-1" role="dialog" aria-labelledby="ageModalLabel" aria-hidden="true">
+       <div class="modal-dialog" role="document">
+          <div class="modal-content">
+             <div class="modal-header">
+                <img class="img-responsive center-block" src="images/centerlogo.png"/>
+             </div>
+             <div class="modal-body">
+                <p id="ageVerifyMessage">Are you 21 years of age or older?</p>
+             </div>
+             <div class="modal-footer">
+                <button type="button" class="btn btn-primary" id="ageVerified">Yes</button>
+                <button type="button" class="btn btn-secondary" id="ageNotVerified">No</button>
+             </div>
+          </div>
+      </div>
+   </div>
+
      <div id="fixedbanner" class="fixedbanner hidden-xs">
        <div class="fixedflex">
  				<div class="fixedlink fixedimglink">
@@ -172,6 +189,23 @@
 			</div>
 		</div>
 
+      <div class="carddivider beersintro">
+         <div class="beersintroleft">
+            <h1><span>What We Brew</span></h1>
+            <div>
+            <p>
+               We are often asked "What type of beers do you specialize in?". Our typical response is "Delicious". We are beer enthusiasts period.  Our beers are crafted 100% naturally. We do not filter or pasteurize our beers. We do not focus on any particular style because we want our patrons to experience and experiment with as many flavors as possible.
+            </p>
+            <p>
+               With that being said it is important to us that each batch we make has an emphasis on being balanced in its presentation for drinkability. Therefore you will always find a wide selection of rotating and seasonal selections on tap in addition to our staple beers. Regardless if you are a novice or a self proclaimed beer guru, we have beers on tap that will please and delight you.
+            </p>
+            </div>
+         </div>
+         <div class="beersintroright">
+            <img src="images/beers/Group.jpg" class="img-responsive"/>
+         </div>
+		</div>
+
 		<div class="row beertitle">
 			<h1><span>Staple Beers</span></h1>
 		</div>
@@ -189,6 +223,19 @@
 
 		<div class="carddivider">
 			<?php perch_content('Limited Releases'); ?>
+		</div>
+
+      <div class="carddivider pastbeers">
+         <div class="pastbeersleft">
+            <h1><span>In Loving Memory</span></h1>
+            <ul>
+               <?php perch_content('Past Beers'); ?>
+            </ul>
+         </div>
+         <div class="pastbeersright">
+            <img src="images/taproomphotos/tanks.jpg" class="img-responsive"/>
+            <img src="images/taproomphotos/tanks2.jpg" class="img-responsive"/>
+         </div>
 		</div>
 
 	</div>

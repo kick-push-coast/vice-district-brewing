@@ -27,6 +27,62 @@ html {
   height: 100vh;
 }
 
+#ageModal {
+	background-color: rgba(0,0,0,.7);
+}
+
+#ageModal .modal-dialog{
+	width: auto;
+	height: auto;
+}
+
+#ageModal .modal-content {
+	background:  none;
+	text-align: center;
+	z-index: 1000;
+	opacity: 1;
+	-webkit-box-shadow: 0 5px 15px rgba(0,0,0,0);
+	-moz-box-shadow: 0 5px 15px rgba(0,0,0,0);
+	-o-box-shadow: 0 5px 15px rgba(0,0,0,0);
+	box-shadow: 0 5px 15px rgba(0,0,0,0);
+	border: none;
+}
+
+
+#ageModal .modal-body {
+	font-family: 'Patua One', cursive, "Trebuchet MS", Helvetica, sans-serif;
+	word-spacing: 0.2em;
+	color: #fff;
+}
+
+#ageModal .modal-body p {
+	font-size: 2.1vw;
+}
+
+#ageModal .modal-header {
+	border: none;
+}
+
+#ageModal .modal-footer {
+	border: none;
+	text-align: center;
+}
+
+#ageModal .modal-footer button {
+	font-family: 'Montserrat', sans-serif;
+	color: #fff;
+	font-size: 1.2vw;
+	width: 100%;
+	margin: 0 auto;
+	margin-top: 6px;
+	border: 1px solid rgba(255,255,255,.3);
+}
+
+#ageModal .modal-footer button:hover {
+	border: 1px solid rgba(255,255,255,1);
+	background: none;
+}
+
 .fixedbanner {
 	max-height: 4.6vw;
 	position: fixed;
@@ -344,6 +400,7 @@ html {
    color: #dbae51;
 	font-family: VDBFont, "Trebuchet MS", Helvetica, sans-serif;
 	box-shadow: -5px 5px 10px #0D0D0D;
+	margin-top:12px;
 }
 
 .panelheading1 {
@@ -398,6 +455,7 @@ html {
 	border-bottom: solid 1px #fff;
 	text-align: center;
 	padding-bottom: 1.2em;
+	color: #dbae51;
 }
 
 .story img {
@@ -431,7 +489,7 @@ html {
 
 .panel {
     border: 0;
-	background-color: transparent;
+	 background-color: transparent;
 }
 
 .panels {
@@ -440,8 +498,41 @@ html {
 	height: 100%;
 }
 
+.bottompanelsflex {
+	width: 100%;
+	display: flex;
+}
+
+.bottompanels {
+	background-image: none;
+	background-color: #001330 !important;
+	background-size: contain !important;
+   background-position: right !important;
+	border-color: #ffcc4d;
+   color: #dbae51;
+	font-family: VDBFont, "Trebuchet MS", Helvetica, sans-serif;
+	box-shadow: -5px 5px 10px #0D0D0D;
+	flex-grow: 1;
+	flex-basis: 0;
+	font-size: 2.5vmax;
+	text-align: center;
+	margin-top: 12px;
+}
+
+.bottompanelsflex > :first-child {
+	margin-right: 6px;
+}
+
+.bottompanelsflex > :last-child {
+	margin-left: 6px;
+}
+
+.bottompanels .glyphicon {
+	font-size: 1.5vmax;
+}
+
 .beericons {
-	max-width: 80px;
+	max-width: 100px;
 	max-height: 80px;
 	opacity: 0.8;
 	padding: 0 6px;
@@ -514,7 +605,7 @@ html {
 
 .taproomleft p {
 	font-size: 1.1vw;
-	margin: 1vw 4vw 0 4vw;
+	margin: 2vw 3vw 1vw 3vw;
 	padding-bottom: 2vw;
 	word-spacing: .2em;
 	letter-spacing: 0.06em;
@@ -713,7 +804,7 @@ html {
 	margin: 0 auto;
 	margin-top: 10px;
 	margin-bottom: -1vw;
-	text-align: left;
+	text-align: center;
 }
 
 .beertitle span {
@@ -731,10 +822,149 @@ html {
 
 .carddivider {
 	border-left: 0px solid #000;
-	border-top: 8px solid #000;
 	width: 100%;
 	margin: 0 auto;
 	margin-bottom: 2vw;
+}
+
+.pastbeers {
+	border: none;
+	padding-top: 1vw;
+	display: flex;
+	height: 100%;
+}
+
+.pastbeersleft {
+	flex-grow: 1;
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+}
+
+.pastbeersright {
+	flex-grow: 1;
+	width: 50%;
+	background-color: rgba(0, 19, 48, .8);
+}
+
+.pastbeersright img {
+	padding: 15px;
+	box-shadow: -5px 5px 10px #0D0D0D;
+	background-color: rgba(0, 19, 48, 1);
+}
+
+.pastbeersright > img:first-of-type {
+	padding-bottom: 0;
+}
+
+.pastbeersleft h1 {
+	background-image: none;
+	font-weight:400;
+	color: #edebe9;
+	margin-top: 0;
+	margin-bottom: 0;
+	width: 100%;
+	font-family: 'Bungee Inline', cursive, "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 3vw;
+   text-shadow: -2px 2px 3px #000;
+	text-align: left;
+	overflow: hidden;
+}
+
+.pastbeersleft > ul {
+	padding: 2vw 3vw;
+	background-color: rgba(0, 19, 48, .8);
+	color: #fff;
+	overflow: auto;
+	height: auto;
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+}
+
+.pastbeersleft li {
+	margin-bottom: .4vw;
+	float: left;
+	width: 100%;
+	font-size: 1.1vw;
+	word-spacing: 0.2em;
+	flex-grow: 1;
+}
+
+.pastbeersleft li span {
+	color: #dbae51;
+}
+
+.pastbeersleft li:before {
+	content: '\ffed';
+	margin-right: 0.5em;
+}
+
+.beersintro {
+	border: none;
+	padding-top: 1vw;
+	display: flex;
+	height: 100%;
+	margin-top: 30px;
+}
+
+.beersintroleft {
+	flex-grow: 1;
+	width: 40%;
+	display: flex;
+	flex-direction: column;
+}
+
+.beersintroleft div {
+	background-color: rgba(0, 19, 48, .8);
+	color: #fff;
+	flex-grow: 1;
+	font-size: 1vw;
+	padding: 2vw;
+	word-spacing: .2em;
+	letter-spacing: 0.06em;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+}
+
+.beersintroleft p {
+	flex-grow: 1;
+}
+
+.beersintroleft h1 {
+	background-image: none;
+	font-weight:400;
+	color: #edebe9;
+	margin-top: 0;
+	margin-bottom: 0;
+	width: 100%;
+	font-family: 'Bungee Inline', cursive, "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 3vw;
+   text-shadow: -2px 2px 3px #000;
+	text-align: left;
+	overflow: hidden;
+}
+
+.beersintroright {
+	flex-grow: 1;
+	width: 60%;
+	background-color: rgba(0, 19, 48, .8);
+}
+
+.beersintroright img {
+	flex-grow: 1;
+	padding: 15px;
+	box-shadow: -5px 5px 10px #0D0D0D;
+	background-color: rgba(0, 19, 48, 1);
+}
+
+.carddivider > div > div:nth-child(odd) {
+	margin-right: 0.5%;
+}
+
+.carddivider > div > div:nth-child(even) {
+	margin-left: 0.5%;
 }
 
 .carddivider .media {
@@ -747,7 +977,7 @@ html {
 	float: none;
 	display: inline-block;
 	vertical-align: top;
-	width: 49.8%;
+	width: 49.2%;
 }
 
 .collapsing {
@@ -794,8 +1024,6 @@ html {
 }
 
 #highlighted {
-	-webkit-filter: brightness(100%) saturate(90%);
-	filter: brightness(100%) saturate(90%);
 }
 
 .card-title {
@@ -847,7 +1075,7 @@ html {
    background-color: rgba(0, 19, 48, .9) !important;
 	margin: 0 auto;
 	margin-bottom: 1vw;
-	margin-top: 1.5vw;
+	margin-top: 1.1vw;
 	color: #fff;
 	width: 98%%;
 }
@@ -875,7 +1103,6 @@ html {
 
 .publiccalendar {
 	padding-top: 15px;
-	border-top: 8px solid #000;
 	color: #fff;
 }
 
@@ -935,27 +1162,26 @@ html {
 }
 
 .publiccalendar .blankcell {
-	background-color: rgba(0, 19, 48, .8);
+	background-color: rgba(0, 19, 48, .7);
 	height: 100%;
 }
 
-.publiccalendar tr td:first-of-type .blankcell {
+.publiccalendar tr td:first-of-type .blankcell, .publiccalendar tr td:first-of-type .privateevent {
 	background-color: rgba(183, 144, 64, 0.8);
 }
 
 .publiccalendar .eventcell {
-	background-color: rgba(0, 19, 48, 1);
+	background-color: rgba(0, 19, 48, .7);
 	height: 100%;
-	box-shadow: -5px 5px 10px #0D0D0D;
 }
 
-.publiccalendar .privateevent {
-	background-color: rgba(0, 0, 0, .7);
-	box-shadow: none;
+.publiccalendar .publiceventtrigger {
+	background-color: rgba(0, 19, 48, 1);
+	/*box-shadow: -5px 5px 10px #0D0D0D;*/
 }
 
 .publiccalendar .privateeventtrigger {
-	background-color: rgba(0, 0, 0, .7);
+	background-color: rgba(0, 0, 0, 1);
 }
 
 .publiccalendar .event {
@@ -963,8 +1189,14 @@ html {
 }
 
 .publiccalendar .privateevent .event div:first-of-type {
-	margin: 5px 10px;
+	margin: 0 6px;
 	border-bottom: 1px solid #fff;
+}
+
+.publiccalendar .publiceventtrigger div:first-of-type {
+	margin: 0 6px 0 6px;
+	border-bottom: 1px solid #fff;
+	text-align: center;
 }
 
 .publiccalendar tr td:first-of-type .blankcell div {
@@ -974,10 +1206,6 @@ html {
 .publiccalendar tr td:first-of-type .blankcell div:first-of-type {
 	margin: 5px 10px;
 	border-bottom: 1px solid #fff;
-}
-
-.publiccalendar .festivalevent {
-	background-color: #38414e;
 }
 
 .publiccalendar .festivaleventtrigger {
@@ -1015,13 +1243,16 @@ html {
   color: inherit;
 }
 
-.eventcell .modal-header, .eventcell .modal-body, .eventcell .modal-content {
-	background-color: rgba(0, 19, 48, .7);
+.modal-content {
+	background-color: rgba(0, 19, 48, .9);
+}
+
+.modal-header, .modal-body, .modal-content {
 	padding-top: 0;
 	padding-bottom: 0;
 }
 
-.eventcell .modal-header h1 {
+.modal-header h1 {
 	font-family: VDBFont, "Trebuchet MS", Helvetica, sans-serif;
 	font-size: 3vw;
 	color: #dbae51;
@@ -1029,11 +1260,21 @@ html {
 	word-spacing: 0.3em;
 }
 
-.eventcell .modal-body p {
+.modal-body p {
 	font-size: 1vw;
 }
 
-.eventcell .modal-header h2 {
+.modal-body a {
+	font-size: 1vw;
+	color: #dbae51;
+	border-bottom: 1px solid rgba(255,255,255,0);
+}
+
+.modal-body a:hover {
+	border-bottom: 1px solid rgba(255,255,255,1);
+}
+
+.modal-header h2 {
 	color: #fff;
 	font-family: 'Patua One', cursive, "Trebuchet MS", Helvetica, sans-serif;
 	font-size: 1.3vw;
@@ -1043,7 +1284,12 @@ html {
 	word-spacing: 0.4em;
 }
 
-.eventcell .modal-body img {
+
+.modal-header .eventlocation {
+	color: #dbae51;
+}
+
+.modal-body img {
 	margin: 0 auto;
 	margin-bottom: 8px;
 }
@@ -1085,6 +1331,26 @@ html {
 	margin-bottom: 8px;
 }
 
+.organizationform {
+	text-align: center;
+	display: flex;
+}
+
+.organizationform div {
+	flex-grow: 1;
+	margin-bottom: 8px;
+	width: 40%;
+}
+
+.organizationform > div:first-of-type {
+	text-align: left;
+	margin-right: 1vw;
+	width: 60%;
+}
+.organizationform div input[type='file'] {
+		width: 100%;
+}
+
 .reservationleft {
 	display: flex;
 	flex-direction: column;
@@ -1105,9 +1371,10 @@ html {
 	background-color: rgba(0, 19, 48, .8);
 	flex-grow: 1;
 	margin-bottom: 0;
+	padding: 0 30px;
 }
 
-.reservationleft p {
+.sectionmessage {
 	resize: vertical;
 	padding: 0 30px;
 	font-family: 'Montserrat', sans-serif;
@@ -1116,25 +1383,45 @@ html {
 	word-spacing: 0.3em;
 }
 
+.sectionmessage a {
+	color: #dbae51;
+}
+
 .reservationleft p span:first-of-type {
 	font-size: 1.8vw;
 	font-family: 'Patua One', cursive, "Trebuchet MS", Helvetica, sans-serif;
 	border-bottom: 1px solid #fff;
 }
 
-.reservationleft .vertalignp div {
+.reservationleft .vertalignp .sectionparagraph {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 1.1vmax;
 	letter-spacing: 0.04em;
 	word-spacing: 0.3em;
-	margin: 0 30px 20px 30px;
+	margin: 0 0 20px 0;
+	padding-bottom: 15px;
+}
+
+.reservationleft .vertalignp .sectionmessage {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.1vmax;
+	letter-spacing: 0.04em;
+	word-spacing: 0.3em;
+	margin: 0 0 20px 0;
 	padding-bottom: 15px;
 	border-bottom: 1px solid #fff;
 }
 
 .reservationleft .vertalignp ul {
-	text-align: center;
+	text-align: left;
 	font-size: 1vw;
+	margin: 0 0 20px 0;
+	padding: 0 30px;
+}
+
+.reservationleft .vertalignp li:before {
+	content: '\ffed';
+	margin-right: 0.5em;
 }
 
 .reservationright {
@@ -1191,8 +1478,29 @@ html {
 	text-align: left;
 }
 
+.faqslink {
+	font-family: 'Bungee Inline', cursive, "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 1.3vw;
+	margin-top: 1vw;
+	text-align: center;
+	color: #dbae51 !important;
+}
+
+.faqslink a span:hover {
+	border-bottom: 1px solid #fff;
+}
+
+.faqslink .glyphicon {
+	font-size: 1vw;
+}
+
+.address {
+	text-align: center;
+}
+
 .contactemail {
 	font-size: 1vw;
+	border-bottom: 1px solid #dbae51;
 }
 
 .contactlink a {
@@ -1322,10 +1630,12 @@ html {
 
 .directionsleft h3{
 	margin-top: 2%;
-	font-size: 2.2vw;
-	font-family: 'VDBFont', sans-serif;
+	font-size: 1.4vw;
+	font-family: 'Bungee Inline', cursive, "Trebuchet MS", Helvetica, sans-serif;
+	word-spacing: 0.2em;
+	border-bottom: 1px solid #dbae51;
 	color: #dbae51;
-	text-align: left;
+	text-align: center;
 }
 
 
@@ -1333,7 +1643,7 @@ html {
 	color: #fff;
 	background-color: rgba(0, 19, 48, 0.8);
 	width: 100%;
-	padding: 20px 10px 20px 10px;
+	padding: 0px 10px 20px 10px;
 	flex-grow: 1;
 	display: flex;
 	flex-direction: column;
@@ -1351,7 +1661,7 @@ html {
 }
 
 .directionsleft li {
-	text-align: left;
+	text-align: center;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 1.2vw;
 	flex-grow: 1;
@@ -1371,6 +1681,23 @@ html {
 .directionsleft a:focus {
 	color: #fff !important;
 }
+
+.directionsleft div .locationcontrols {
+	display: flex;
+	width: 100%;
+	padding: 0;
+}
+
+.locationcontrols li {
+	font-size: 1.9vw;
+	text-align: center;
+	flex-grow: 1;
+	flex-basis: 0;
+	padding: 5px 0;
+	margin-top: 4%;
+	font-family: VDBFont;
+}
+
 
 .directionsright {
 	flex-grow: 1;
@@ -1605,7 +1932,6 @@ form input[type="text"] {
 	}
 
 	.cardwrap {
-		width: 49.6%;
 	}
 
 }

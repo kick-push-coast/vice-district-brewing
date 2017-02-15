@@ -43,6 +43,23 @@
   </head>
   <body>
 
+     <div class="modal fade" id="ageModal" tabindex="-1" role="dialog" aria-labelledby="ageModalLabel" aria-hidden="true">
+       <div class="modal-dialog" role="document">
+          <div class="modal-content">
+             <div class="modal-header">
+                <img class="img-responsive center-block" src="images/centerlogo.png"/>
+             </div>
+             <div class="modal-body">
+                <p id="ageVerifyMessage">Are you 21 years of age or older?</p>
+             </div>
+             <div class="modal-footer">
+                <button type="button" class="btn btn-primary" id="ageVerified">Yes</button>
+                <button type="button" class="btn btn-secondary" id="ageNotVerified">No</button>
+             </div>
+          </div>
+      </div>
+   </div>
+
      <div id="fixedbanner" class="fixedbanner hidden-xs">
        <div class="fixedflex">
  				<div class="fixedlink fixedimglink">
@@ -187,6 +204,8 @@
             <div>
                <div class="vertflex contactlink">(312) 291 - 9022</div>
                <div class="vertflex contactlink contactemail"><a href="mailto:info@vicedistrictbrewing.com">info@vicedistrictbrewing.com</a></div>
+               <div class="vertflex faqslink"><a href="#FAQs"><span>Frequently Asked Questions</span> <span class="glyphicon glyphicon-chevron-down"
+                      aria-hidden="true"></span></a></div>
             </div>
          </div>
          <div class="contactinforight">
@@ -202,10 +221,16 @@
 			<div class="directionsleft">
 				<h1>Get Here</h1>
 				<div>
+               <div class="vertflex locationcontrols">
+                  <ul>
+                     <li class='locationcontrol' id='southloop' style="border: 1px solid #dbae51;"><a href="#" onclick="return false;" id="centersouthloop">South Loop</a></li>
+                     <li class='locationcontrol' id='homewood' style="border: 1px solid rgba(0,0,0,0);"><a href="#" onclick="return false;" id="centerhomewood">Homewood</a></li>
+                  </ul>
+               </div>
 					<div class="vertflex">
-						<a href="https://www.google.com/maps/place/Vice+District+Brewing+Company/@41.8624994,-87.6265913,17z/data=!3m1!4b1!4m5!3m4!1s0x880e2c8464f6131d:0x3907d1208eaa2804!8m2!3d41.8624994!4d-87.6244026" title="View a Google Map To Vice District's Taproom" class="contactlink">1454 S Michigan Ave</br>Chicago, IL 60605</a>
+						<a href="https://www.google.com/maps/place/Vice+District+Brewing+Company/@41.8624994,-87.6265913,17z/data=!3m1!4b1!4m5!3m4!1s0x880e2c8464f6131d:0x3907d1208eaa2804!8m2!3d41.8624994!4d-87.6244026" title="View a Google Map To Vice District's Taproom" class="contactlink address" id="address">1454 S Michigan Ave</br>Chicago, IL 60605</a>
 					</div>
-					<div  class="vertflex">
+					<div  class="vertflex" id="nearbyVenues">
 						<h3>From nearby venues</h3>
 						<ul>
 							<li><a href="#" onclick="return false;" id="soldierfield">Soldier Field</a></li>
@@ -213,7 +238,7 @@
 							<li><a href="#" onclick="return false;" id="unitedcenter">United Center</a></li>
 						</ul>
 					</div>
-					<div  class="vertflex">
+					<div  class="vertflex" id="nearbyPublicTransit">
 						<h3>From public transportation</h3>
 						<ul>
 							<li><a href="#" onclick="return false;" id="busstop">1510 S Michigan Stop</br>
@@ -233,7 +258,7 @@
          </div>
 		</div>
 
-      <div class="FAQs">
+      <div class="FAQs" id="FAQs">
 
          <h1>FAQ<span>s</span></h1>
 
