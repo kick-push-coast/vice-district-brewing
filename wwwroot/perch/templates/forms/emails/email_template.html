@@ -1,0 +1,31 @@
+<html>
+<head>
+    <title>VDB website message from: <perch:email id="contactname" /></title>
+    <style>
+      th {
+         text-align: left;
+         border-bottom: 1px solid #000;
+      }
+      td {
+         border-bottom: 1px solid #000;
+      }
+   </style>
+</head>
+<body>
+  <h2>Message sent from the website:</h2>
+  <table>
+    <tr>
+      <th>Name</th>
+      <td><perch:email id="contactname" /></td>
+    </tr>
+    <tr>
+      <th>Email</th>
+      <td><perch:email id="contactemail" /></td>
+    </tr>
+    <tr>
+      <th>Message</th>
+      <td><perch:email id="contactmessage" encode="false" /></td>
+    </tr>
+  </table>
+</body>
+</html>

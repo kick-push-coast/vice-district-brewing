@@ -209,11 +209,7 @@
             </div>
          </div>
          <div class="contactinforight">
-            <form action="" id="contactform">
-               <textarea name="contactformmsg" placeholder="Write us a message..." required></textarea>
-               <input type="text" placeholder="Your E-Mail Address" name="contactformemail" required>
-               <input type="submit" value="Send">
-            </form>
+            <? perch_content('Contact Form'); ?>
          </div>
       </div>
 

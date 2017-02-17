@@ -234,39 +234,7 @@
             </div>
          </div>
          <div class="reservationright">
-            <form>
-               <div class="form-group">
-                 <label for="partyname">Name</label>
-                 <input type="text text-left" class="form-control" id="partyname" required>
-              </div>
-                <div class="form-group">
-                 <label for="partyemail">Email address</label>
-                 <input type="email" class="form-control" id="partyemail" required>
-               </div>
-              <div class="form-group organizationform">
-                <div>
-                   <label for="partyorg">Organization (optional)</label>
-                   <input type="text text-left" class="form-control" id="partyorg">
-                </div>
-                <div>
-                   <label for="nfpcheck">Are you a 501(c)3 nonprofit?</label>
-                   <input type="checkbox" id="nfpcheck" onchange='nfpCheck(this);'>
-                   <label for="nfpproof" style="visibility:hidden;color:#dbae51;" id="nfpprooflabel">Please provide proof:</label>
-                   <input type="file" name="fileToUpload" id="nfpproof" style="visibility:hidden;">
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="partydate">Reservation Date</label>
-                <input type="date" id="partydate" required/>
-                <label for="partysize">Party Size</label>
-                <input type="number" id="partysize" min="40" max="99" required/>
-              </div>
-              <div class="form-group">
-                <label for="partymessage">Leave A Message</label>
-                <textarea class="form-control" id="partymessage" rows="2" required></textarea>
-              </div>
-              <input type="submit" value="Send">
-            </form>
+            <? perch_content('Reservation Form'); ?>
          </div>
       </div>
 

@@ -3,4 +3,6 @@
 		'content',
 		'categories',
 		'perch_events',
+		'perch_mailchimp',
+		'perch_forms'
 	);

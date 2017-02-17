@@ -1,0 +1,52 @@
+<html>
+<head>
+   <title>Taproom reservation request from: <perch:email id="partyname" /></title>
+   <style>
+      th {
+         text-align: left;
+         border-bottom: 1px solid #000;
+      }
+      td {
+         border-bottom: 1px solid #000;
+      }
+   </style>
+</head>
+<body>
+  <h2>Reservation request sent from the website:</h2>
+  <table>
+    <tr>
+      <th>Name </th>
+      <td><perch:email id="partyname" /></td>
+    </tr>
+    <tr>
+      <th>Email </th>
+      <td><perch:email id="partyemail" /></td>
+    </tr>
+    <perch:if exists="partyorg">
+       <tr>
+         <th>Organization </th>
+         <td><perch:email id="partyorg" /></td>
+       </tr>
+    </perch:if>
+    <perch:if exists="nfpcheck">
+       <tr>
+         <th>NFP? </th>
+         <td>Yes, see attachment for proof</td>
+       </tr>
+    </perch:if>
+
+    <tr>
+      <th>Date </th>
+      <td><perch:email id="partydate" /></td>
+    </tr>
+    <tr>
+      <th>Party Size </th>
+      <td><perch:email id="partysize" /></td>
+    </tr>
+    <tr>
+      <th>Message </th>
+      <td><perch:email id="partymessage" encode="false" /></td>
+    </tr>
+  </table>
+</body>
+</html>

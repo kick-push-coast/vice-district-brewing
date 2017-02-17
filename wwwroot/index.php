@@ -136,14 +136,7 @@
 					</a>
 					<div class="signupheader">Stay in the Loop.</div>
 					<div class="signuptext">Subscribe to our newsletter to see what's happening at Vice District</div>
-					<div class="row signupform">
-						<div class="col-xs-10">
-							<form>
-								<input type="text" placeholder="Your Email Address">
-							</form>
-						</div>
-						<div class="col-xs-1"><span class="glyphicon glyphicon-arrow-right newsletterglyph" aria-hidden="true"></span></div>
-					</div>
+					<?php perch_mailchimp_form('forms/VDBsubscribe'); ?>
 				</div>
 			</div>
 			<div class="bannerbottom">

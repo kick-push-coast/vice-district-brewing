@@ -266,8 +266,38 @@ html {
 }
 
 .signupform {
-	padding: 0 .4vmax 0 4.7vmax;
-	font-family: 'Bungee Inline', cursive, "Trebuchet MS", Helvetica, sans-serif;
+	line-height: 1vw;
+}
+
+.signupinputs {
+	display: flex;
+	padding: 0.4vw 0.9vw 0 2.2vw;
+	font-size: 0.9vw;
+}
+
+.signupinput {
+	flex-grow: 1;
+	width: 40%;
+}
+
+.signupsubmit {
+	flex-grow:1;
+	width: 20%;
+	font-family: 'Patua One', cursive, "Trebuchet MS", Helvetica, sans-serif;
+}
+
+.signupsubmit input {
+	font-size: 0.9vw;
+	border: none;
+	background-color: rgba(255,255,255,0.5);
+	border: 1px solid #fff;
+	width: 95%;
+	height: 100%;
+	transition: background-color .3s ease;
+}
+
+.signupsubmit input:hover {
+	background-color: #fff;
 }
 
 #closesignup {
@@ -1329,6 +1359,8 @@ html {
 
 .form-group {
 	margin-bottom: 8px;
+	display: flex;
+	border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 
 .organizationform {
@@ -1398,7 +1430,7 @@ html {
 	font-size: 1.1vmax;
 	letter-spacing: 0.04em;
 	word-spacing: 0.3em;
-	margin: 0 0 20px 0;
+	margin: 20px 0 20px 0;
 	padding-bottom: 15px;
 }
 
@@ -1437,6 +1469,14 @@ html {
 	outline: none;
 	color: #fff;
 	background-color: #38414e;
+	flex-grow: 1;
+	padding: 0 6px;
+	font-size: 1vw;
+}
+
+.reservationright label {
+	min-width: 35%;
+	font-size: 1vw;
 }
 
 .reservationright textarea {
@@ -1452,6 +1492,19 @@ html {
 
 .reservationright form input[type="submit"]:hover {
 	border: solid 1px rgba(355, 355, 355, 1);
+}
+
+.nfpproofgroup {
+	color: #dbae51;
+	display: none;
+}
+
+.inputshrink input {
+	flex-grow: 0;
+}
+
+.contactformsubmit {
+	text-align: center;
 }
 
 .contactinfo {
@@ -1517,6 +1570,20 @@ html {
 	box-shadow: -5px 5px 10px #0D0D0D;
 }
 
+.vertthankyou {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+}
+
+.vertthankyou {
+	color: #dbae51;
+	font-family: VDBFont, "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 2vw;
+}
+
 .contactinforight textarea {
    resize: none;
 	background-color: #38414e;
@@ -1525,7 +1592,7 @@ html {
 	outline: none;
 	font-size: 1vw;
 	font-family: 'Montserrat', sans-serif;
-	height: 64%;
+	height: 73%;
 	width: 100%;
 }
 
@@ -1534,7 +1601,16 @@ html {
 	height: 100%;
 }
 
-.contactinforight form input[type="text"] {
+.contactformID {
+	width: 100%;
+	display: flex;
+}
+
+.contactformID > input:first-of-type {
+	margin-right: 6px;
+}
+
+.contactinforight form input[type="text"], .contactinforight form input[type="email"] {
 	margin-top: 3px;
 	background-color: #38414e;
 	border: none;
@@ -1542,8 +1618,10 @@ html {
 	text-align: left;
 	font-size: 1vw;
 	color: #fff;
-	padding-left: 3px;
 	font-family: 'Montserrat', sans-serif;
+	width: 50%;
+	flex-grow: 1;
+	flex-basis: 0;
 }
 
 .contactinforight form input[type="submit"] {
@@ -1556,6 +1634,7 @@ html {
 	outline: none;
 	-webkit-transition: border .3s ease;
 	transition: border .3s ease;
+	width: 20%;
 }
 
 .contactinforight form input[type="submit"]:hover {
@@ -1695,7 +1774,7 @@ html {
 	flex-basis: 0;
 	padding: 5px 0;
 	margin-top: 4%;
-	font-family: VDBFont;
+	font-family: VDBFont, "Trebuchet MS", Helvetica, sans-serif;
 }
 
 
@@ -1816,13 +1895,6 @@ html {
 	color: #fff;
 }
 
-form input[type="text"] {
-	width: 100%;
-	text-align: center;
-	font-size: 1.1vmax;
-	font-weight: 700;
-}
-
 .footertext {
 	color: #fff;
 	font-family: 'Patua One', cursive, "Trebuchet MS", Helvetica, sans-serif;
@@ -1907,11 +1979,23 @@ form input[type="text"] {
 	.panellink {
 		font-size: 16px;
 	}
+	.panellink .glyphicon {
+		font-size: 14px;
+	}
+	.bottompanels {
+		font-size: 30px;
+	}
+	.bottompanels  .glyphicon {
+		font-size: 16px;
+	}
 	#navinners {
-		font-size: 18px;
+		font-size: 1.1vw;
 	}
 	.footertextleft, .footertextright {
 		font-size: 16px;
+	}
+	.media {
+		font-size: 12px;
 	}
 	.media-body {
 		font-size: 16px;
@@ -1922,18 +2006,40 @@ form input[type="text"] {
 	.badge {
 		font-size: 20px;
 	}
+	.card-block h1 {
+		font-size: 20px;
+	}
+	.card-block h4 {
+		font-size: 14px;
+	}
+	.taproomleft p, .taproomleft blockquote {
+		font-size: 14px;
+	}
+	.taproomleft h1, .ownersright h1, .calendarheader, .beersintroleft h1, .beertitle span, .pastbeersleft h1, .contactinfoleft h1, .directionsleft h1, .FAQs h1 {
+		font-size: 1.6vw;
+	}
+	.ownersright p, .ownersright blockquote, .card-text, .card-block h4, .list-group li, .pastbeersleft li, .salesemployee .salesinfo h4, .bartender h4, .reservationleft .vertalignp .sectionmessage, .modal-header h2, .modal-header .eventlocation, .reservationleft .vertalignp .sectionparagraph, .publiccalendar h2 .glyphicon, .faqslink, .contactinforight textarea, .contactinforight form input[type="text"] , .contactinforight form input[type="email"], .directionsleft h3, .question {
+		font-size: 14px;
+	}
+	.ownersright div h3, .salesemployee .salesinfo h3, .bartender h3, .modal-header h1, .reservationleft p span:first-of-type, .publiccalendar h2:nth-child(1), .contactlink, .contactemail a {
+		font-size: 18px;
+	}
+	.salesemployee .salesinfo div, .bartender span, .modal-body a, .modal-body p, li, .reservationright label, .reservationright input, .contactinforight form input[type="submit"], .directionsleft li, .answer, .faqslink .glyphicon, .beersintroleft p  {
+		font-size: 12px;
+	}
+	.pull-down-glyph,  .locationcontrols li {
+		font-size: 24px;
+	}
+	.contactinforight textarea {
+		height: 70%;
+	}
+
 }
 
-@media only screen and (max-width: 1200px) {
-
-	.directionsleft h1, .contactinfoleft h1, .FAQs h1 {
-		font-size: 4.2vw;
-		text-align: center;
+@media only screen and (min-width: 1921px) {
+	h1 {
+		font-size: 30px !important;
 	}
-
-	.cardwrap {
-	}
-
 }
 
 @media only screen and (max-width: 992px) {
@@ -1941,12 +2047,13 @@ form input[type="text"] {
 	#navinners {
 		line-height: 115%;
 		letter-spacing: 2px;
+		font-size: 0.9vmax;
 	}
 	.footersitemap {
 		border-top: 1px solid #fff;
 	}
 	.fixedbanner {
-		font-size: 1.8vmax;
+		font-size: 1.3vmax;
 	}
 	.footertextleft {
 		text-align: center;
@@ -1964,17 +2071,20 @@ form input[type="text"] {
 	}
 
 	.card-block h1 {
-		font-size: 3.5vw;
+		font-size: 2.2vmax;
 	}
 
 	.card-block h4 {
-		font-size: 1.8vw;
+		font-size: 1.4vmax;
 	}
 	.carddivider {
 		width: 100%;
 	}
 	.beertitle {
 		width: 100%;
+	}
+	.media-heading{
+		font-size: 1.9vmax;
 	}
 }
 

@@ -1,0 +1,50 @@
+<perch:form id="reservationform" method="post" app="perch_forms">
+
+   <div class="form-group">
+      <perch:label for="partyname">Name</perch:label>
+      <perch:input type="text" id="partyname" required="true" label="Name" />
+      <perch:error for="partyname" type="required">Please add your name</perch:error>
+  </div>
+   <div class="form-group">
+      <perch:label for="partyemail">Email</perch:label>
+      <perch:input type="email" id="partyemail" required="true" label="Email" />
+      <perch:error for="partyemail" type="required">Please add your email address</perch:error>
+      <perch:error for="partyemail" type="format">Please check your email address</perch:error>
+   </div>
+   <div class="form-group">
+      <perch:label for="partyorg">Organization (optional)</perch:label>
+      <perch:input type="text" id="partyorg" label="Organization" />
+   </div>
+   <div class="form-group">
+      <perch:label for="nfpcheck">Are you a 501(c)3 nonprofit?</perch:label>
+      <perch:input type="checkbox" value="Active" id="nfpcheck" />
+   </div>
+   <div class="form-group inputshrink nfpproofgroup">
+      <perch:label for="nfpproof" id="nfpprooflabel">Please provide proof:</perch:label>
+      <perch:input type="file" name="nfpProofUpload" id="nfpproof" accept="pdf office image"/>
+      <perch:error for="nfpproof" type="filetype">
+        <script>alert('File upload must be a PDF, Office Doc, or Image');
+        </script>
+      </perch:error>
+   </div>
+  <div class="form-group inputshrink">
+   <perch:label for="partydate">Reservation Date</perch:label>
+   <perch:input type="date" id="partydate" required="true" label="Date"/>
+  </div>
+  <div class="form-group inputshrink">
+   <perch:label for="partysize">Party Size</perch:label>
+   <perch:input type="number" id="partysize" min="40" max="99" required="true" label="Party Size"/>
+  </div>
+  <div class="form-group">
+   <perch:label for="partymessage">Leave A Message</perch:label>
+   <perch:input type="textarea" class="form-control" id="partymessage" rows="2" required="true" Label="Message"/>
+  </div>
+  <div class="contactformsubmit">
+  <perch:input type="submit" value="Send" />
+  </div>
+
+  <perch:success>
+       <div class="vertthankyou"><perch:content id="success" type="textarea" label="Thank you message" textile="true" editor="markitup" /></div>
+  </perch:success>
+
+</perch:form>

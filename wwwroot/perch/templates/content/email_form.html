@@ -1,0 +1,18 @@
+<perch:form id="contactform" method="post" app="perch_forms">
+   <perch:input type="textarea" id="contactmessage" label="Message" required="true" placeholder="Write Us A Message..." />
+   <perch:error for="contactmessage" type="required">Please add a message</perch:error>
+   <div class="contactformID">
+      <perch:input type="text" id="contactname" required="true" label="Name" placeholder="Your Name" />
+      <perch:error for="contactname" type="required">Please add your name</perch:error>
+
+      <perch:input type="email" id="contactemail" required="true" label="Email" placeholder="Your E-Mail Address" />
+      <perch:error for="contactemail" type="required">Please add your email address</perch:error>
+      <perch:error for="contactemail" type="format">Please check your email address</perch:error>
+   </div>
+
+   <perch:input type="submit" id="submit" value="Send" />
+
+   <perch:success>
+        <div class="vertthankyou"><perch:content id="success" type="textarea" label="Thank you message" textile="true" editor="markitup" /></div>
+   </perch:success>
+</perch:form>

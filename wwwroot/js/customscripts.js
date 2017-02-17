@@ -65,6 +65,17 @@ $(function() {
 		hidesignup = 1;
 	});
 
+	$('#form1_nfpcheck').change(function() {
+		if($('.nfpproofgroup').css('display') == 'none') {
+			$('.nfpproofgroup').css("display", "flex");
+			document.getElementById("form1_nfpproof").required = true;
+		}
+		else {
+			$('.nfpproofgroup').hide();
+			document.getElementById("form1_nfpproof").required = false;
+		}
+	});
+
 	function getCookie(name) {
 		var dc = document.cookie;
 		var prefix = name + "=";
@@ -122,6 +133,8 @@ $(function() {
 			$("#ageModal").modal('show');
 		}
 
+		$('#form1_nfpcheck').removeAttr("checked");
+
 	});
 
 	var fixedCls = '.fixedbanner';
@@ -139,16 +152,3 @@ $(function() {
    }
 
 });
-
-function nfpCheck(checkbox) {
-	if(checkbox.checked == true) {
-		document.getElementById("nfpproof").style.visibility = "visible";
-		document.getElementById("nfpprooflabel").style.visibility = "visible";
-		document.getElementById("nfpproof").required = true;
-	}
-	else {
-		document.getElementById("nfpproof").style.visibility = "hidden";
-		document.getElementById("nfpprooflabel").style.visibility = "hidden";
-		document.getElementById("nfpproof").required = false;
-	}
-}
