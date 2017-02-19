@@ -171,7 +171,7 @@
 	</div>
 
 	<div class="main container">
-		<div class="panel-group hidden-sm hidden-md hidden-lg">
+      <div class="panel-group hidden-sm hidden-md hidden-lg">
 			<div class="panel panel-default">
 				<div class="panel-heading" id="panelmobile">
 					<h4 class="panel-title">
@@ -180,29 +180,35 @@
 				</div>
 				<div id="collapsemobile" class="panel-collapse collapse">
 					<div class="panel-body" id="panelmobile">
-						<a href="Beer.php">
+                  <div class="mobileinners" id="">
+      					<div><a href="https://www.yelp.com/biz/vice-district-taproom-chicago"><img class="" src="images/socialicons/yelpicon.svg" title="Yelp"/></a></div>
+      					<div><a href="https://www.facebook.com/ViceDistrictBrewing/"><img class="" src="images/socialicons/facebookicon.svg" title="Facebook"/></a></div>
+      					<div><a href="https://twitter.com/Vice_District"><img class="" src="images/socialicons/twittericon.svg" title="Twitter"/></a></div>
+      					<div><a href="https://www.instagram.com/vice_district/"><img class="" src="images/socialicons/instagramicon.svg"title="Instagram"/></a></div>
+      				</div>
+                  <a href="index.php">
 							<div class="mobileinners">
-								The Beer
+								<div>Home</div>
 							</div>
 						</a>
 						<a href="taproom.php">
 							<div class="mobileinners">
-								The Taproom
+								<div>Taproom</div>
 							</div>
 						</a>
-						<a href="Calendar.php">
+                  <a href="family.php">
 							<div class="mobileinners">
-								Calendar
+								<div>Family</div>
 							</div>
 						</a>
-						<a href="Contact.php">
+                  <a href="beer.php">
 							<div class="mobileinners">
-								Contact Us
+								<div>Beer</div>
 							</div>
 						</a>
-						<a href="">
+						<a href="calendar.php">
 							<div class="mobileinners">
-								Gear Shop
+								<div>Calendar</div>
 							</div>
 						</a>
 					</div>

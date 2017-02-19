@@ -198,6 +198,7 @@ html {
 	width: 21%;
 	height: 25.863%;
 	top: 10.06%;
+	left: 0;
 	padding-left: .4vmax;
 	padding-right: 1vmax;
 	display: -webkit-box;
@@ -380,31 +381,42 @@ html {
 }
 
 #titlemobile {
-	font-size: 8vw;
+	font-size: 9vw;
 	overflow: hidden;
 }
 
 .glyphmobile {
-	font-size: 6.5vw;
+	font-size: 7vw;
 }
 
 .panel-body#panelmobile {
-	background-color: rgba(0, 0, 0, 0.8) !important;
+	background-color: rgba(0, 0, 0, 0) !important;
 	margin: 0 !important;
-	padding: 10px 0 0 0 !important;
+	text-align: center;
 }
 
 .mobileinners {
-	background-color: rgba(0,0,0,1) !important;
+	background-color: rgba(0,0,0,0.7) !important;
 	margin: 0;
-	padding-left: 10px;
 	width: 100%;
 	height: 10.5vw;
-	font-size: 7vw;
+	font-size: 6.5vw;
 	font-family: 'Bungee Inline', cursive, "Trebuchet MS", Helvetica, sans-serif;
-	text-align: center;
-	overflow: hidden;
 	border-bottom: 1.5px solid #dbae51;
+	overflow: hidden;
+	display: flex;
+}
+
+.mobileinners div {
+	height: 80%;
+	flex-grow: 1;
+	overflow: hidden;
+}
+
+.mobileinners div a img {
+	height: 75%;
+	-webkit-filter: brightnes(200%) grayscale(100%);
+	filter: brightness(200%) grayscale(100%);
 }
 
 .mosaic {
@@ -1107,7 +1119,6 @@ html {
 	margin-bottom: 1vw;
 	margin-top: 1.1vw;
 	color: #fff;
-	width: 98%%;
 }
 
 .carddivider .panelpadding h2 {
@@ -2092,6 +2103,9 @@ html {
 	* {
 		overflow-x: hidden;
 	}
+	body {
+		background-image: url('../images/wood4.png');
+	}
 	.container {
 		margin: 0;
 		padding: 0;
@@ -2124,6 +2138,7 @@ html {
 	.mosaic {
 		padding: 0;
 		margin: 0 auto;
+		margin-top: 15px;
 		width: 96%;
 	}
 	.mosaic img{
@@ -2135,9 +2150,22 @@ html {
 		width: 100%;
 	}
 	.panel-title {
-		font-size: 6vw;
+		font-size: 8vw;
 		height: 7.5vw;
 		padding: 0;
+		overflow: hidden;
+	}
+	.bottompanels {
+		font-size: 6vw;
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+	.bottompanels .glyphicon {
+		font-size: 4vw;
+	}
+	.panel > .panel-heading {
+		box-shadow: none;
+		margin: 0;
 	}
 	.media {
 		font-size: 3.5vw;
@@ -2190,7 +2218,17 @@ html {
 	}
 	.panel-body {
 		padding: 0;
-		padding-right: 28px;
+		width: 100%;
+	}
+	.panel-body .row {
+		margin: 0;
+	}
+	.media {
+		padding: 0;
+		max-width: 100%;
+	}
+	.panel-group {
+		margin: 0;
 	}
 	.panellink {
 		font-size: 4vw;
@@ -2208,6 +2246,9 @@ html {
 	}
 	.panelheading3 {
 		background: url('../images/rectevents.png') no-repeat !important;
+	}
+	.panel-heading {
+		margin: 0;
 	}
 	.media-body {
 		font-size: 4.5vw;
@@ -2252,6 +2293,54 @@ html {
 	}
 	.beertitle {
 		text-align: center;
+	}
+	.taproomblock {
+		margin: 0;
+		margin-top: 10px;
+	}
+	.taproomblock h1 {
+		text-align: left;
+		font-size: 6.5vw;
+		margin-left: 5px;
+	}
+	.taproomtop {
+		display: block;
+		width: 100%;
+		margin: 0;
+	}
+	.taproomleft , .taproomright {
+		flex-grow: 0;
+		width: 100%;
+	}
+	.taproomright img {
+		margin: 0 auto;
+	}
+	.taproomleft p, .taproomleft blockquote {
+		font-size: 3vw;
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.ownersblock {
+		display: block;
+	}
+	.ownersleft, .ownersright {
+		width: 100%;
+	}
+	.bartender {
+		flex: 0 1 47%;
+	}
+	.salesblock {
+		display: block;
+	}
+	.salesemployee {
+		margin-top: 10px;
+		width: 100%;
+	}
+	.salesemployee .salesimg {
+		width: 50%;
+	}
+	.salesemployee .salesinfo {
+		width: 50%;
 	}
 }
 
