@@ -33,6 +33,7 @@
 
   </head>
   <body>
+     <?php include_once("analyticstracking.php") ?>
 
      <div class="modal fade" id="ageModal" tabindex="-1" role="dialog" aria-labelledby="ageModalLabel" aria-hidden="true">
        <div class="modal-dialog" role="document">
@@ -150,11 +151,11 @@
 	</div>
 
 	<div class="main container">
-		<div class="panel-group hidden-sm hidden-md hidden-lg">
+		<div class="panel-group hidden-sm hidden-md hidden-lg hidden-xl">
 			<div class="panel panel-default">
 				<div class="panel-heading" id="panelmobile">
 					<h4 class="panel-title">
-						<a data-toggle="collapse" href="#collapsemobile"><h1 class="panel-title"  id="titlemobile">Menu <span class="glyphicon glyphicon-menu-hamburger glyphmobile" aria-hidden="true"></span></h1></a>
+						<a data-toggle="collapse" href="#collapsemobile"><h1 class="panel-title"  id="titlemobile"><span class="glyphicon glyphicon-menu-hamburger glyphmobile" aria-hidden="true"></span></h1></a>
 					</h4>
 				</div>
 				<div id="collapsemobile" class="panel-collapse collapse">
@@ -165,9 +166,9 @@
       					<div><a href="https://twitter.com/Vice_District"><img class="" src="images/socialicons/twittericon.svg" title="Twitter"/></a></div>
       					<div><a href="https://www.instagram.com/vice_district/"><img class="" src="images/socialicons/instagramicon.svg"title="Instagram"/></a></div>
       				</div>
-                  <a href="index.php">
+                  <a href="beer.php">
 							<div class="mobileinners">
-								<div>Home</div>
+								<div>Beer</div>
 							</div>
 						</a>
 						<a href="taproom.php">
@@ -180,14 +181,14 @@
 								<div>Family</div>
 							</div>
 						</a>
-                  <a href="beer.php">
-							<div class="mobileinners">
-								<div>Beer</div>
-							</div>
-						</a>
 						<a href="calendar.php">
 							<div class="mobileinners">
 								<div>Calendar</div>
+							</div>
+						</a>
+                  <a href="contact.php">
+							<div class="mobileinners">
+								<div>Contact</div>
 							</div>
 						</a>
 					</div>
@@ -210,7 +211,9 @@
 			<div class="col-xs-12 col-sm-6 text-center">
 				<div class="footertext row">
 					<div class="col-md-6 col-sm-12 footertextleft">
-						<a href="https://www.google.com/maps/dir//1454+S+Michigan+Ave,+Chicago,+IL+60605/" title="View a Google Map To Vice District's Taproom">1454 S Michigan Ave</br>Chicago, IL 60605</a></br></br><a href="tel:+3122919022">&#40;312&#41; 291 - 9022</a>
+						<a href="https://www.google.com/maps/dir//1454+S+Michigan+Ave,+Chicago,+IL+60605/" title="View a Google Map To Vice District's Taproom">1454 S Michigan Ave</br>Chicago, IL 60605</a>
+                  </br></br>
+                  <a href="tel:+3122919022">&#40;312&#41; 291 - 9022</a>
 					</div>
 					<div class="col-md-6 col-sm-12 footertextright">
 						Monday: Private Events Only</br>

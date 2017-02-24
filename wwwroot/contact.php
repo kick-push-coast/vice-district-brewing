@@ -42,6 +42,7 @@
 
   </head>
   <body>
+     <?php include_once("analyticstracking.php") ?>
 
      <div class="modal fade" id="ageModal" tabindex="-1" role="dialog" aria-labelledby="ageModalLabel" aria-hidden="true">
        <div class="modal-dialog" role="document">
@@ -159,52 +160,60 @@
 	</div>
 
 	<div class="main container">
-		<div class="panel-group hidden-sm hidden-md hidden-lg">
+      <div class="panel-group hidden-sm hidden-md hidden-lg hidden-xl">
 			<div class="panel panel-default">
 				<div class="panel-heading" id="panelmobile">
 					<h4 class="panel-title">
-						<a data-toggle="collapse" href="#collapsemobile"><h1 class="panel-title"  id="titlemobile">Menu <span class="glyphicon glyphicon-menu-hamburger glyphmobile" aria-hidden="true"></span></h1></a>
+						<a data-toggle="collapse" href="#collapsemobile"><h1 class="panel-title"  id="titlemobile"><span class="glyphicon glyphicon-menu-hamburger glyphmobile" aria-hidden="true"></span></h1></a>
 					</h4>
 				</div>
 				<div id="collapsemobile" class="panel-collapse collapse">
 					<div class="panel-body" id="panelmobile">
-						<a href="beer.php">
+                  <div class="mobileinners" id="">
+      					<div><a href="https://www.yelp.com/biz/vice-district-taproom-chicago"><img class="" src="images/socialicons/yelpicon.svg" title="Yelp"/></a></div>
+      					<div><a href="https://www.facebook.com/ViceDistrictBrewing/"><img class="" src="images/socialicons/facebookicon.svg" title="Facebook"/></a></div>
+      					<div><a href="https://twitter.com/Vice_District"><img class="" src="images/socialicons/twittericon.svg" title="Twitter"/></a></div>
+      					<div><a href="https://www.instagram.com/vice_district/"><img class="" src="images/socialicons/instagramicon.svg"title="Instagram"/></a></div>
+      				</div>
+                  <a href="beer.php">
 							<div class="mobileinners">
-								The Beer
+								<div>Beer</div>
 							</div>
 						</a>
 						<a href="taproom.php">
 							<div class="mobileinners">
-								The Taproom
+								<div>Taproom</div>
+							</div>
+						</a>
+                  <a href="family.php">
+							<div class="mobileinners">
+								<div>Family</div>
 							</div>
 						</a>
 						<a href="calendar.php">
 							<div class="mobileinners">
-								Calendar
+								<div>Calendar</div>
 							</div>
 						</a>
-						<a href="contact.php">
+                  <a href="contact.php">
 							<div class="mobileinners">
-								Contact Us
-							</div>
-						</a>
-						<a href="">
-							<div class="mobileinners">
-								Gear Shop
+								<div>Contact</div>
 							</div>
 						</a>
 					</div>
 				</div>
-         </div>
+			</div>
 		</div>
 
       <div class="contactinfo">
          <div class="contactinfoleft">
             <h1>Get In Touch</h1>
             <div>
-               <div class="vertflex contactlink">(312) 291 - 9022</div>
-               <div class="vertflex contactlink contactemail"><a href="mailto:info@vicedistrictbrewing.com">info@vicedistrictbrewing.com</a></div>
-               <div class="vertflex faqslink"><a href="#FAQs"><span>Frequently Asked Questions</span> <span class="glyphicon glyphicon-chevron-down"
+               <div class="vertflex contactlink"><a href="tel:+13122919022"><span class="hidden-sm hidden-md hidden-lg hidden-xl">Phone: </span>&#40;312&#41; 291 - 9022</a></div>
+               <div class="vertflex contactlink contactemail"><a href="mailto:info@vicedistrictbrewing.com"><span class="hidden-sm hidden-md hidden-lg hidden-xl">Email: </span>info@vicedistrictbrewing.com</a></div>
+               <div class="vertflex contactlink hidden-sm hidden-md hidden-lg hidden-xl mobileaddress"><a href="https://www.google.com/maps/place/Vice+District+Brewing+Company/@41.8624994,-87.6265913,17z/data=!3m1!4b1!4m5!3m4!1s0x880e2c8464f6131d:0x3907d1208eaa2804!8m2!3d41.8624994!4d-87.6244026" title="View a Google Map To Vice District's Taproom">1454 S Michigan Ave</br>Chicago, IL 60605</a>
+               </div>
+               <div class="vertflex faqslink hidden-xs"><a href="#FAQs"><span>Frequently Asked Questions</span> <span class="glyphicon glyphicon-chevron-down"
                       aria-hidden="true"></span></a></div>
             </div>
          </div>
@@ -213,7 +222,7 @@
          </div>
       </div>
 
-		<div class="directions">
+		<div class="directions hidden-xs">
 			<div class="directionsleft">
 				<h1>Get Here</h1>
 				<div>

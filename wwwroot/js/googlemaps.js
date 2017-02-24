@@ -80,8 +80,8 @@ function initMap() {
           center: viceDistrict,
           zoom: 15,
 		  styles: [
-            {elementType: 'geometry', stylers: [{color: '#001330'}]},
-            {elementType: 'labels.text.stroke', stylers: [{color: '#001330'}]},
+            {elementType: 'geometry', stylers: [{color: '#011028'}]},
+            {elementType: 'labels.text.stroke', stylers: [{color: '#011028'}]},
             {elementType: 'labels.text.fill', stylers: [{color: '#746855'}]},
             {
               featureType: 'administrative.locality',

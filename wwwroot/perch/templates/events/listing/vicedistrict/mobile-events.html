@@ -1,9 +1,6 @@
 
-<div class="row row-content panelpadding">
+<div class="row row-content panelpadding mobileevent">
    <div class="media">
-      <div class="media-left media-middle hidden-xs">
-         <img class="media-object beericons" src="<perch:if exists="eventIcon"><perch:events id="eventIcon" type="image" label="Image (optional)" width="640" crop="true" />" alt="<perch:events id="eventTitle" /><perch:else/>/perch/resources/generalevent.svg</perch:if>" />
-      </div>
       <div class="media-body">
          <h2 class="media-heading"><perch:events id="eventTitle" /><span class="badge pull-right"><perch:events id="eventDateTime" format="m/d/y" /> <perch:events id="eventDateTime" format="%l:%M%p" /></span></h2>
          <perch:if exists="eventLocation"><h3><perch:events id="eventLocation" /></h3></perch:if>

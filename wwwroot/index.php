@@ -33,6 +33,7 @@
 
   </head>
   <body>
+     <?php include_once("analyticstracking.php") ?>
 
      <div class="modal fade" id="ageModal" tabindex="-1" role="dialog" aria-labelledby="ageModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -171,11 +172,11 @@
 	</div>
 
 	<div class="main container">
-      <div class="panel-group hidden-sm hidden-md hidden-lg">
+      <div class="panel-group hidden-sm hidden-md hidden-lg hidden-xl">
 			<div class="panel panel-default">
 				<div class="panel-heading" id="panelmobile">
 					<h4 class="panel-title">
-						<a data-toggle="collapse" href="#collapsemobile"><h1 class="panel-title"  id="titlemobile">Menu <span class="glyphicon glyphicon-menu-hamburger glyphmobile" aria-hidden="true"></span></h1></a>
+						<a data-toggle="collapse" href="#collapsemobile"><h1 class="panel-title"  id="titlemobile"><span class="glyphicon glyphicon-menu-hamburger glyphmobile" aria-hidden="true"></span></h1></a>
 					</h4>
 				</div>
 				<div id="collapsemobile" class="panel-collapse collapse">
@@ -186,9 +187,9 @@
       					<div><a href="https://twitter.com/Vice_District"><img class="" src="images/socialicons/twittericon.svg" title="Twitter"/></a></div>
       					<div><a href="https://www.instagram.com/vice_district/"><img class="" src="images/socialicons/instagramicon.svg"title="Instagram"/></a></div>
       				</div>
-                  <a href="index.php">
+                  <a href="beer.php">
 							<div class="mobileinners">
-								<div>Home</div>
+								<div>Beer</div>
 							</div>
 						</a>
 						<a href="taproom.php">
@@ -201,20 +202,21 @@
 								<div>Family</div>
 							</div>
 						</a>
-                  <a href="beer.php">
-							<div class="mobileinners">
-								<div>Beer</div>
-							</div>
-						</a>
 						<a href="calendar.php">
 							<div class="mobileinners">
 								<div>Calendar</div>
+							</div>
+						</a>
+                  <a href="contact.php">
+							<div class="mobileinners">
+								<div>Contact</div>
 							</div>
 						</a>
 					</div>
 				</div>
 			</div>
 		</div>
+
 		<div class="mosaic">
 			<div class="row">
 				<div class="hidden-xs col-sm-4">
@@ -326,6 +328,7 @@
 
 	</div>
 
+
 	<footer class="row-footer customfooter">
 		<!-- <div class="row footerbegin hidden-xs">
 			<div class="col-sm-12 col-md-9">
@@ -342,7 +345,7 @@
         </div> -->
 
 		<div class="row vertaligned">
-			<div class="col-xs-12 col-sm-6 text-center">
+			<div class="col-xs-12 col-sm-6 text-center nopadding">
 				<div class="footertext row">
 					<div class="col-md-6 col-sm-12 footertextleft">
 						<a href="https://www.google.com/maps/place/Vice+District+Brewing+Company/@41.8624994,-87.6265913,17z/data=!3m1!4b1!4m5!3m4!1s0x880e2c8464f6131d:0x3907d1208eaa2804!8m2!3d41.8624994!4d-87.6244026" title="View a Google Map To Vice District's Taproom">1454 S Michigan Ave</br>Chicago, IL 60605</a></br></br><a href="tel:+3122919022">&#40;312&#41; 291 - 9022</a>
@@ -354,6 +357,12 @@
 						Saturday: 2PM-1AM</br>
 						Sunday: 2PM-9PM</br>
 					</div>
+               <div class="hidden-sm hidden-md hidden-lg hidden-xl">
+                  <div class="mobilenewsletter">Subscribe to our newsletter</div>
+                  <div>
+                     <?php perch_mailchimp_form('forms/VDBsubscribe'); ?>
+                  </div>
+               </div>
 				</div>
 			</div>
 			<div class="col-xs-12 col-sm-6 footermap">
