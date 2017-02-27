@@ -4,9 +4,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="See what Vice District is up to: public events at our taproom, available private reservations, and beer festivals we will be attending.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Calendar | Vice District Brewing Co.</title>
+    <title>Events and Beer Festivals | Vice District Brewing</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -18,10 +19,10 @@
 
 	<link rel="icon" href="images/icon.png">
 
-	<!-- Google Fonts -->
+   <!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Bungee+Inline" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat|Titillium+Web" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Rock+Salt|Shadows+Into+Light+Two" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -258,52 +259,58 @@
             </div>
          </div>
          <div class="reservationright">
-            <img src='images/festival.jpg' class='img-responsive'/>
+            <img src='images/festival.jpg' class='img-responsive' alt="Beer Festival"/>
          </div>
       </div>
 
 	</div>
 
-	<footer class="row-footer customfooter">
+   <footer class="row-footer customfooter">
 
 		<div class="row vertaligned">
-			<div class="col-xs-12 col-sm-6 text-center">
+			<div class="col-xs-12 col-sm-6 text-center nopadding">
 				<div class="footertext row">
 					<div class="col-md-6 col-sm-12 footertextleft">
-						<a href="https://www.google.com/maps/dir//1454+S+Michigan+Ave,+Chicago,+IL+60605/" title="View a Google Map To Vice District's Taproom">1454 S Michigan Ave</br>Chicago, IL 60605</a></br></br><a href="tel:+3122919022">&#40;312&#41; 291 - 9022</a>
+						<a href="https://www.google.com/maps/place/Vice+District+Brewing+Company/@41.8624994,-87.6265913,17z/data=!3m1!4b1!4m5!3m4!1s0x880e2c8464f6131d:0x3907d1208eaa2804!8m2!3d41.8624994!4d-87.6244026" title="View a Google Map To Vice District's Taproom">1454 S Michigan Ave</br>Chicago, IL 60605</a></br></br><a href="tel:+3122919022">&#40;312&#41; 291 - 9022</a>
 					</div>
 					<div class="col-md-6 col-sm-12 footertextright">
-						Monday: Private Events Only</br>
+						Monday: Private Events</br>
 						Tues-Thurs: 4PM-11PM</br>
 						Friday: 4PM-1AM</br>
 						Saturday: 2PM-1AM</br>
 						Sunday: 2PM-9PM</br>
 					</div>
+               <div class="hidden-sm hidden-md hidden-lg hidden-xl">
+                  <div class="mobilenewsletter">Subscribe to our newsletter</div>
+                  <div>
+                     <?php perch_mailchimp_form('forms/VDBsubscribe'); ?>
+                  </div>
+               </div>
 				</div>
 			</div>
 			<div class="col-xs-12 col-sm-6 footermap">
-				<a href="https://www.google.com/maps/dir//1454+S+Michigan+Ave,+Chicago,+IL+60605/" title="View a Google Map To Vice District's Taproom">
+				<a href="https://www.google.com/maps/place/Vice+District+Brewing+Company/@41.8624994,-87.6265913,17z/data=!3m1!4b1!4m5!3m4!1s0x880e2c8464f6131d:0x3907d1208eaa2804!8m2!3d41.8624994!4d-87.6244026" title="View a Google Map To Vice District's Taproom">
 					<img src="images/footermap.png" alt="Google Map of 1454 S Michigan Ave, Chicago, IL 60605" class="img-responsive footermap">
 				</a>
 			</div>
 		</div>
 
-		<div class="row text-center footerend">
+      <div class="row text-center footerend">
 			<div class="col-xs-12 col-sm-6 sitemap">
-				<a href="taproom.php" class="sitemapinners">
+            <a href="taproom.php" class="sitemapinners">
 					About
 				</a>
-				<a href="Beer.php" class="sitemapinners">
+				<a href="family.php" class="sitemapinners">
+					Jobs
+				</a>
+				<a href="beer.php" class="sitemapinners">
 					Product
 				</a>
-				<a href="Calendar.php" class="sitemapinners">
+				<a href="calendar.php" class="sitemapinners">
 					Calendar
 				</a>
-				<a href="Contact.php" class="sitemapinners">
+				<a href="contact.php" class="sitemapinners">
 					Contact
-				</a>
-				<a class="sitemapinners">
-					Shop
 				</a>
 			</div>
 			<div class="col-xs-12 col-sm-6 copyright">&#169; <?php echo date("Y"); ?> Vice District Brewing Co.</div>

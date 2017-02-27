@@ -4,9 +4,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Find your preferred way of contacting Vice District. Get directions to our South Loop taproom and Homewood taproom (coming soon).">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Contact | Vice District Brewing Co.</title>
+    <title>Contact and Directions | Vice District Brewing</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -18,10 +19,10 @@
 
 	<link rel="icon" href="images/icon.png">
 
-	<!-- Google Fonts -->
+   <!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Bungee+Inline" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat|Titillium+Web" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Rock+Salt|Shadows+Into+Light+Two" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
 
 	<!-- Font Awesome -->
@@ -207,7 +208,7 @@
 
       <div class="contactinfo">
          <div class="contactinfoleft">
-            <h1>Get In Touch</h1>
+            <h1>Contact</h1>
             <div>
                <div class="vertflex contactlink"><a href="tel:+13122919022"><span class="hidden-sm hidden-md hidden-lg hidden-xl">Phone: </span>&#40;312&#41; 291 - 9022</a></div>
                <div class="vertflex contactlink contactemail"><a href="mailto:info@vicedistrictbrewing.com"><span class="hidden-sm hidden-md hidden-lg hidden-xl">Email: </span>info@vicedistrictbrewing.com</a></div>
@@ -275,10 +276,13 @@
 
 	<footer class="row-footer customfooter">
 
-		<div class="row text-center footerend">
+      <div class="row text-center footerend">
 			<div class="col-xs-12 col-sm-6 sitemap">
-				<a href="taproom.php" class="sitemapinners">
+            <a href="taproom.php" class="sitemapinners">
 					About
+				</a>
+				<a href="family.php" class="sitemapinners">
+					Jobs
 				</a>
 				<a href="beer.php" class="sitemapinners">
 					Product
@@ -288,9 +292,6 @@
 				</a>
 				<a href="contact.php" class="sitemapinners">
 					Contact
-				</a>
-				<a class="sitemapinners">
-					Shop
 				</a>
 			</div>
 			<div class="col-xs-12 col-sm-6 copyright">&#169; <?php echo date("Y"); ?> Vice District Brewing Co.</div>

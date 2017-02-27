@@ -84,7 +84,7 @@ html {
 }
 
 .fixedbanner {
-	max-height: 4.6vw;
+	height: 4.6vw;
 	position: fixed;
 	top: 0;
 	z-index: 10;
@@ -103,13 +103,14 @@ html {
 }
 
 .fixedflex {
-	max-height: 4.6vw;
+	height: 4.6vw;
 	width: 100%;
 	display: flex;
 }
 
 .fixedimglink {
 	border-right: 2px solid #dbae51;
+	text-align: center;
 }
 
 .fixedlink {
@@ -124,6 +125,8 @@ html {
 
 .fixedimg {
 	height: 100%;
+	max-height: 100%;
+	max-width: 9vw;
 	margin: 0 auto;
 	padding: 4% 0;
 	pointer-events: auto;
@@ -263,7 +266,7 @@ html {
 .signuptext{
 	font-family: 'Patua One', cursive, "Trebuchet MS", Helvetica, sans-serif;
 	font-size: 1.4vw;
-	padding: 2% 12% 2% 12%;
+	padding: 2% 10%;
 }
 
 .signupform {
@@ -423,7 +426,7 @@ html {
 .mosaic {
 	margin: 0 auto;
 	text-align: center;
-	margin-top: 42px;
+	margin-top: 40px;
 	margin-bottom: 8px;
 	width: 92%;
 }
@@ -495,12 +498,14 @@ html {
 	margin-bottom: 1.6em;
 }
 
-.story h3 {
-	border-bottom: solid 1px #fff;
+.story h1 {
+	border-bottom: solid 1px #dbae51;
 	text-align: center;
 	padding-bottom: 1.2em;
-	color: #dbae51;
-	font-size: 1.7vw;
+	color: #fff;
+	word-spacing: 0.3em;
+	font-size: 1.5vw;
+	font-family: 'Rock Salt', cursive, "Trebuchet MS", Helvetica, sans-serif;
 }
 
 .story img {
@@ -518,9 +523,13 @@ html {
 	font-weight: bold;
 }
 
+.media-body a {
+	color: #dbae51;
+}
+
 .media-heading {
-	font-family: 'VDBFont', sans-serif;
-	font-size: 2.4vmax;
+	font-family: 'Patua One', "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 2.1vmax;
 	color: #dbae51;
 	border-bottom: 0.5px solid rgba(255,255,255,0.6);
 }
@@ -1179,7 +1188,8 @@ html {
 	font-size: 1.9vw;
 }
 
-.publiccalendar table, .publiccalendar thead, .publiccalendar tbody {
+.publiccalendar, .publiccalendar table, .publiccalendar thead, .publiccalendar tbody {
+	height: 100%;
 	width: 100%;
 }
 
@@ -1193,13 +1203,15 @@ html {
 	border-bottom: 3px solid #dbae51;
 	box-shadow: -5px 5px 10px #0D0D0D;
 }
+.publiccalendar tbody tr {
+	height: 100%;
+}
 
 .publiccalendar tbody td {
-	height: 7vw;
+	height: 100%;
 }
 
 .publiccalendar td {
-	height: 100%;
 	width: 100%;
 	padding: .2%;
 	border: 0px solid transparent;
@@ -1212,11 +1224,16 @@ html {
 
 .publiccalendar tr td:first-of-type .blankcell, .publiccalendar tr td:first-of-type .privateevent {
 	background-color: rgba(183, 144, 64, 0.8);
+	height: 100%;
+}
+
+.publiccalendar tr td:first-of-type {
+	height: 7vw;
 }
 
 .publiccalendar .eventcell {
 	background-color: rgba(1, 16, 40, .7);
-	height: 100%;
+	min-height: 7vw;
 }
 
 .publiccalendar .publiceventtrigger {
@@ -1337,6 +1354,7 @@ html {
 	margin-bottom: 9px;
 	text-align: center;
 	word-spacing: 0.4em;
+	overflow: hidden;
 }
 
 
@@ -1797,7 +1815,7 @@ html {
 	flex-grow: 1;
 	flex-basis: 0;
 	padding: 5px 0;
-	margin-top: 4%;
+	margin-top: 15px;
 	font-family: VDBFont, "Trebuchet MS", Helvetica, sans-serif;
 }
 
@@ -1805,17 +1823,23 @@ html {
 .directionsright {
 	flex-grow: 1;
 	width: 50%;
+	position: relative;
 }
 
 #map {
-	height: 100%;
-	width: 100%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
 	box-shadow: -5px 5px 10px #0D0D0D;
 }
 
 .directionsrightpad {
 	width: 4%;
 	overflow: hidden;
+	display: flex;
+	flex-direction: column;
 }
 
 .directionsrightpad h1 {
@@ -1833,7 +1857,7 @@ html {
 .directionsrightpad div {
 	background-color: rgba(1, 16, 40, 0.8);
 	padding: 20px 10px 20px 10px;
-	height: 100%;
+	flex-grow: 1;
 	width: 100%;
 }
 
@@ -1928,7 +1952,7 @@ html {
 
 .footertextleft {
 	text-align: right;
-	font-size: 1.5vmax;;
+	font-size: 1.5vmax;
 	border-style: solid;
 	border-top: 0;
 	border-bottom: 0;
@@ -2192,7 +2216,7 @@ html {
 		max-height: 55px;
 	}
 	.beertitle {
-		margin: 0;;
+		margin: 0;
 	}
 	.beertitle span{
 		font-size: 7vw;
@@ -2376,7 +2400,7 @@ html {
 	.salesemployee .salesinfo h3, .bartender h3, .card-block h4, .media-body h3, .ownersright div h3, .story h3, .modal-header h2 {
 		font-size: 3.2vw;
 	}
-	.salesemployee .salesinfo h4, .bartender h4, .reservationleft .vertalignp .sectionmessage, .reservationleft .vertalignp .btn , .beersintroleft div, .pastbeersleft li, .media-body, .cardcollapse, .story p, #ageModal .modal-body p, .faqslink, .question, .reservationleft .vertalignp .sectionparagraph {
+	.salesemployee .salesinfo h4, .bartender h4, .reservationleft .vertalignp .sectionmessage, .reservationleft .vertalignp .btn , .beersintroleft div, .pastbeersleft li, .media-body, .cardcollapse, .story p, #ageModal .modal-body p, .faqslink, .question, .reservationleft .vertalignp .sectionparagraph, .story h1 {
 		font-size: 3vw;
 	}
 	.badge, .modal-body p, .modal-body li, .modal-body a, #ageModal .modal-footer button, .contactinforight form input[type="text"], .contactinforight form input[type="email"], .contactinforight textarea, .answer, .reservationright label, .reservationright textarea, .reservationright input, .reservationleft .calendar li {
@@ -2447,12 +2471,12 @@ html {
 	.signupform {
 		margin: 0 12px;
 	}
-	#form2_email, #form2_firstname {
+	.customfooter #form1_email, .customfooter #form1_firstname, #form2_email, #form2_firstname {
 		width: 100%;
 		border-right: 2px solid #000;
 		font-size: 3vw;
 	}
-	#form2_btnsubmit {
+	.customfooter #form1_btnsubmit, #form2_btnsubmit {
 		font-size: 3vw;
 		width: 100%;
 	}
@@ -2473,6 +2497,9 @@ html {
 	.mobileaddress a {
 		text-align: center;
 		color: #dbae51;
+	}
+	.story {
+		line-height: normal;
 	}
 
 }

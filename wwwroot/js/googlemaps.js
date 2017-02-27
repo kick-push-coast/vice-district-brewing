@@ -51,8 +51,8 @@ $(document).ready(function () {
       if (lastMarker != null) {
 			lastMarker.setMap(null);
 		}
-      document.getElementById('homewood').style = "border: 1px solid #dbae51;"
-      document.getElementById('southloop').style = "border: 1px solid rgba(0,0,0,0);"
+      document.getElementById('homewood').style.border = "1px solid #dbae51";
+      document.getElementById('southloop').style.border = "1px solid rgba(0,0,0,0)";
       directionsDisplay.set('directions', null);
       map.setCenter(viceDistrictHomewood);
   	   $("a.selectedorigin").removeClass('selectedorigin');
@@ -63,8 +63,8 @@ $(document).ready(function () {
    });
    $("#centersouthloop").on('click', function ()
    {
-      document.getElementById('southloop').style = "border: 1px solid #dbae51;"
-      document.getElementById('homewood').style = "border: 1px solid rgba(0,0,0,0);"
+      document.getElementById('southloop').style.border = "1px solid #dbae51";
+      document.getElementById('homewood').style.border = "1px solid rgba(0,0,0,0)";
       directionsDisplay.set('directions', null);
   	   $("a.selectedorigin").removeClass('selectedorigin');
       map.setCenter(viceDistrict);

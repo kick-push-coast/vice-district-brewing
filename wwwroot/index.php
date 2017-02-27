@@ -4,9 +4,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="We offer rotating craft beers brewed and poured fresh in our South Loop taproom right on Michigan Avenue.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Vice District Brewing Co.</title>
+    <title>Microbrewery serving Chicago's South Loop | Vice District</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -20,8 +21,8 @@
 
 	<!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Bungee+Inline" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat|Titillium+Web" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Rock+Salt|Shadows+Into+Light+Two" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -220,16 +221,16 @@
 		<div class="mosaic">
 			<div class="row">
 				<div class="hidden-xs col-sm-4">
-					<div class="row"><div class="col-xs-12" style="padding-right: 0px;"><img class="img-responsive" src="images/mosaic1.png"></div></div>
-					<div class="row"><div class="col-xs-12" style="padding-right: 0px;"><img class="img-responsive" src="images/mosaic4-2.png"></div></div>
+					<div class="row"><div class="col-xs-12" style="padding-right: 0px;"><img class="img-responsive" src="images/mosaic1.png" alt="Craft Beer"></div></div>
+					<div class="row"><div class="col-xs-12" style="padding-right: 0px;"><img class="img-responsive" src="images/mosaic4-2.png" alt="Merchandise"></div></div>
 				</div>
 				<div class="col-xs-12 col-sm-8">
 					<div class="row">
-						<div class="col-xs-5" style="padding-right: 0px;"><img class="img-responsive" src="images/mosaic2.png"></div>
-						<div class="col-xs-7"><img class="img-responsive" src="images/mosaic3.png"></div>
+						<div class="col-xs-5" style="padding-right: 0px;"><img class="img-responsive" src="images/mosaic2.png" alt="Bartender"></div>
+						<div class="col-xs-7"><img class="img-responsive" src="images/mosaic3.png" alt="Craft Beer"></div>
 					</div>
 					<div class="row">
-						<div class="col-xs-12"><img class="img-responsive" src="images/mosaic5.png"></div>
+						<div class="col-xs-12"><img class="img-responsive" src="images/mosaic5.png" alt="Taproom Near Downtown"></div>
 					</div>
 				</div>
 			</div>
@@ -240,8 +241,8 @@
 			<div class="panel panel-default">
 				<div class="panel-heading panelheading1">
 					<h4 class="panel-title">
-						<a data-toggle="collapse" href="#collapse1"><h1 class="panel-title">Who We Are <span class="glyphicon glyphicon-chevron-down"
-                         aria-hidden="true"></span></h1></a>
+						<a data-toggle="collapse" href="#collapse1"><h2 class="panel-title">Who We Are <span class="glyphicon glyphicon-chevron-down"
+                         aria-hidden="true"></span></h2></a>
 					</h4>
 				</div>
 				<div id="collapse1" class="panelcollapse panel-collapse collapse">
@@ -263,7 +264,7 @@
 			<div class="panel panel-default">
 				<div class="panel-heading panelheading2">
 					<h4 class="panel-title">
-						<a data-toggle="collapse" href="#collapse2"><h1 class="panel-title">New On Tap <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></h1></a>
+						<a data-toggle="collapse" href="#collapse2"><h2 class="panel-title">New Beer On Tap <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></h2></a>
 					</h4>
 				</div>
 				<div id="collapse2" class="panelcollapse panel-collapse collapse">
@@ -284,8 +285,8 @@
 		  <div class="panel panel-default">
 				<div class="panel-heading panelheading3">
 					<h4 class="panel-title">
-						<a data-toggle="collapse" href="#collapse3"><h1 class="panel-title">Upcoming Events <span class="glyphicon glyphicon-chevron-down"
-                         aria-hidden="true"></span></h1></a>
+						<a data-toggle="collapse" href="#collapse3"><h2 class="panel-title">Upcoming Events <span class="glyphicon glyphicon-chevron-down"
+                         aria-hidden="true"></span></h2></a>
 					</h4>
 				</div>
 				<div id="collapse3" class="panelcollapse panel-collapse collapse">
@@ -330,19 +331,6 @@
 
 
 	<footer class="row-footer customfooter">
-		<!-- <div class="row footerbegin hidden-xs">
-			<div class="col-sm-12 col-md-9">
-				<div class="row newsletter">
-					<div class="col-xs-3 text-center">Newsletter &nbsp;Signup</div>
-					<div class="col-xs-5">
-						<form>
-							<input type="text" placeholder="Your Email Address">
-						</form>
-					</div>
-					<div class="col-xs-4"><span class="glyphicon glyphicon-arrow-right newsletterglyph" aria-hidden="true"></span></div>
-				</div>
-			</div>
-        </div> -->
 
 		<div class="row vertaligned">
 			<div class="col-xs-12 col-sm-6 text-center nopadding">
@@ -374,20 +362,20 @@
 
 		<div class="row text-center footerend">
 			<div class="col-xs-12 col-sm-6 sitemap">
-				<a href="taproom.php" class="sitemapinners">
+            <a href="taproom.php" class="sitemapinners">
 					About
 				</a>
-				<a href="Beer.php" class="sitemapinners">
+				<a href="family.php" class="sitemapinners">
+					Jobs
+				</a>
+				<a href="beer.php" class="sitemapinners">
 					Product
 				</a>
-				<a href="Calendar.php" class="sitemapinners">
+				<a href="calendar.php" class="sitemapinners">
 					Calendar
 				</a>
-				<a href="Contact.php" class="sitemapinners">
+				<a href="contact.php" class="sitemapinners">
 					Contact
-				</a>
-				<a class="sitemapinners">
-					Shop
 				</a>
 			</div>
 			<div class="col-xs-12 col-sm-6 copyright">&#169; <?php echo date("Y"); ?> Vice District Brewing Co.</div>
