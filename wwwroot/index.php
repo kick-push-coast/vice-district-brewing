@@ -9,13 +9,7 @@
 
     <title>Microbrewery serving Chicago's South Loop | Vice District</title>
 
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-
-	<!-- Custom CSS -->
-	<link href="css/navbarreset.css" rel="stylesheet">
-	<link href="css/customstyles.css" rel="stylesheet">
+	<link href="css/cleancomplete.css" rel="stylesheet">
 
 	<link rel="icon" href="images/icon.png">
 
@@ -221,16 +215,16 @@
 		<div class="mosaic">
 			<div class="row">
 				<div class="hidden-xs col-sm-4">
-					<div class="row"><div class="col-xs-12" style="padding-right: 0px;"><img class="img-responsive" src="images/mosaic1.png" alt="Craft Beer"></div></div>
-					<div class="row"><div class="col-xs-12" style="padding-right: 0px;"><img class="img-responsive" src="images/mosaic4-2.png" alt="Merchandise"></div></div>
+					<div class="row"><div class="col-xs-12" style="padding-right: 0px;"><img class="img-responsive" src="images/mosaic1.jpg" alt="Craft Beer"></div></div>
+					<div class="row"><div class="col-xs-12" style="padding-right: 0px;"><img class="img-responsive" src="images/mosaic4-2.jpg" alt="Merchandise"></div></div>
 				</div>
 				<div class="col-xs-12 col-sm-8">
 					<div class="row">
-						<div class="col-xs-5" style="padding-right: 0px;"><img class="img-responsive" src="images/mosaic2.png" alt="Bartender"></div>
-						<div class="col-xs-7"><img class="img-responsive" src="images/mosaic3.png" alt="Craft Beer"></div>
+						<div class="col-xs-5" style="padding-right: 0px;"><img class="img-responsive" src="images/mosaic2.jpg" alt="Bartender"></div>
+						<div class="col-xs-7"><img class="img-responsive" src="images/mosaic3.jpg" alt="Craft Beer"></div>
 					</div>
 					<div class="row">
-						<div class="col-xs-12"><img class="img-responsive" src="images/mosaic5.png" alt="Taproom Near Downtown"></div>
+						<div class="col-xs-12"><img class="img-responsive" src="images/mosaic5.jpg" alt="Taproom Near Downtown"></div>
 					</div>
 				</div>
 			</div>
@@ -355,7 +349,7 @@
 			</div>
 			<div class="col-xs-12 col-sm-6 footermap">
 				<a href="https://www.google.com/maps/place/Vice+District+Brewing+Company/@41.8624994,-87.6265913,17z/data=!3m1!4b1!4m5!3m4!1s0x880e2c8464f6131d:0x3907d1208eaa2804!8m2!3d41.8624994!4d-87.6244026" title="View a Google Map To Vice District's Taproom">
-					<img src="images/footermap.png" alt="Google Map of 1454 S Michigan Ave, Chicago, IL 60605" class="img-responsive footermap">
+					<img src="images/footermap.jpg" alt="Google Map of 1454 S Michigan Ave, Chicago, IL 60605" class="img-responsive footermap">
 				</a>
 			</div>
 		</div>

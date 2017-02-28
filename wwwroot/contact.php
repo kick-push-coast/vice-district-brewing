@@ -9,13 +9,7 @@
 
     <title>Contact and Directions | Vice District Brewing</title>
 
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-
-	<!-- Custom CSS -->
-	<link href="css/navbarreset.css" rel="stylesheet">
-	<link href="css/customstyles.css" rel="stylesheet">
+   <link href="css/cleancomplete.css" rel="stylesheet">
 
 	<link rel="icon" href="images/icon.png">
 

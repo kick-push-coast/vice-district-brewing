@@ -9,13 +9,7 @@
 
     <title>Taproom and Reservations | Vice District Brewing</title>
 
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-
-	<!-- Custom CSS -->
-	<link href="css/navbarreset.css" rel="stylesheet">
-	<link href="css/customstyles.css" rel="stylesheet">
+   <link href="css/cleancomplete.css" rel="stylesheet">
 
 	<link rel="icon" href="images/icon.png">
 
@@ -231,7 +225,7 @@
 			</div>
 			<div class="col-xs-12 col-sm-6 footermap">
 				<a href="https://www.google.com/maps/place/Vice+District+Brewing+Company/@41.8624994,-87.6265913,17z/data=!3m1!4b1!4m5!3m4!1s0x880e2c8464f6131d:0x3907d1208eaa2804!8m2!3d41.8624994!4d-87.6244026" title="View a Google Map To Vice District's Taproom">
-					<img src="images/footermap.png" alt="Google Map of 1454 S Michigan Ave, Chicago, IL 60605" class="img-responsive footermap">
+					<img src="images/footermap.jpg" alt="Google Map of 1454 S Michigan Ave, Chicago, IL 60605" class="img-responsive footermap">
 				</a>
 			</div>
 		</div>

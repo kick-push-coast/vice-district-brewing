@@ -163,7 +163,7 @@ html {
 }
 
 .banner {
-    background-image: url('../images/bannerbg2.png');
+    background-image: url('../images/bannerbg2.jpg');
 	background-color: #404040;
     background-size: contain;
     background-repeat: no-repeat;
@@ -1069,8 +1069,8 @@ html {
 }
 
 .card img {
-	-webkit-filter: brightness(100%) saturate(70%);
-	filter: brightness(100%) saturate(70%);
+	-webkit-filter: saturate(60%);
+	filter: saturate(60%);
 	-webkit-transition: filter .3s ease;
 	transition: filter .3s ease;
 	width: 100%;
@@ -1612,19 +1612,7 @@ html {
 	box-shadow: -5px 5px 10px #0D0D0D;
 }
 
-.vertthankyou {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 100%;
-	height: 100%;
-}
-
-.vertthankyou {
-	color: #dbae51;
-	font-family: VDBFont, "Trebuchet MS", Helvetica, sans-serif;
-	font-size: 2vw;
-}
+.vertthankyou {display: flex;align-items:center;justify-content: center;width: 100%;height: 100%;color: #dbae51;font-family: VDBFont, "Trebuchet MS", Helvetica, sans-serif;font-size: 2vw}
 
 .contactinforight textarea {
    resize: none;
@@ -2064,18 +2052,18 @@ html {
 		font-size: 14px;
 	}
 	.taproomleft h1, .ownersright h1, .calendarheader, .beersintroleft h1, .beertitle span, .pastbeersleft h1, .contactinfoleft h1, .directionsleft h1, .FAQs h1 {
-		font-size: 1.6vw;
+		font-size: 30px;
 	}
 	.ownersright p, .ownersright blockquote, .card-text, .card-block h4, .list-group li, .pastbeersleft li, .salesemployee .salesinfo h4, .bartender h4, .reservationleft .vertalignp .sectionmessage, .modal-header h2, .modal-header .eventlocation, .reservationleft .vertalignp .sectionparagraph, .publiccalendar h2 .glyphicon, .faqslink, .contactinforight textarea, .contactinforight form input[type="text"] , .contactinforight form input[type="email"], .directionsleft h3, .question {
 		font-size: 14px;
 	}
-	.ownersright div h3, .salesemployee .salesinfo h3, .bartender h3, .modal-header h1, .reservationleft p span:first-of-type, .publiccalendar h2:nth-child(1), .contactlink, .contactemail a {
+	.ownersright div h3, .salesemployee .salesinfo h3, .bartender h3, .modal-header h1, .reservationleft p span:first-of-type, .publiccalendar h2:nth-child(1), .contactlink, .contactlink a, .contactemail a {
 		font-size: 18px;
 	}
 	.salesemployee .salesinfo div, .bartender span, .modal-body a, .modal-body p, li, .reservationright label, .reservationright input, .contactinforight form input[type="submit"], .directionsleft li, .answer, .faqslink .glyphicon, .beersintroleft p  {
 		font-size: 12px;
 	}
-	.pull-down-glyph,  .locationcontrols li {
+	.pull-down-glyph,  .locationcontrols li, .story h1 {
 		font-size: 24px;
 	}
 	.contactinforight textarea {
@@ -2085,9 +2073,7 @@ html {
 }
 
 @media only screen and (min-width: 1921px) {
-	h1 {
-		font-size: 30px !important;
-	}
+
 }
 
 @media only screen and (max-width: 992px) {
@@ -2141,7 +2127,7 @@ html {
 		overflow-x: hidden;
 	}
 	body {
-		background-image: url('../images/wood4.png');
+		background-image: url('../images/wood4.jpg');
 	}
 	h1, h3, h4 {
 		overflow: hidden;
@@ -2308,7 +2294,7 @@ html {
 		overflow: hidden;
 	}
 	.banner {
-		background-image: url('../images/bannerbgmobile.png');
+		background-image: url('../images/bannerbgmobile.jpg');
 		padding-top: 37.32%;
 		width: 100%;
 	}
