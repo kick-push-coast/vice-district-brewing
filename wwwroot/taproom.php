@@ -50,7 +50,7 @@
      <div id="fixedbanner" class="fixedbanner hidden-xs">
        <div class="fixedflex">
  				<div class="fixedlink fixedimglink">
-                <a href="index.php">
+                <a href="/">
                    <img src="images/fixedlogoskyline.png" class="img-responsive fixedimg">
                 </a>
              </div>
@@ -97,7 +97,7 @@
           </div>
 
  			<!-- <div class="col-xs-2 fixedlogowrap">
- 				<a href="index.php"><img src="images/fixedlogo.png" class="img-responsive fixedlogo center-block" id="centerlogo" alt="Vice District Brewing Co."/></a>
+ 				<a href="/"><img src="images/fixedlogo.png" class="img-responsive fixedlogo center-block" id="centerlogo" alt="Vice District Brewing Co."/></a>
  			</div>
  			<div class="col-xs-10"></div> -->
 
@@ -112,7 +112,7 @@
 					<div id="socialinners"><a href="https://twitter.com/Vice_District"><img class="img-responsive col-xs-12" src="images/socialicons/twittericon.svg" title="Twitter"/></a></div>
 					<div id="socialinners"><a href="https://www.instagram.com/vice_district/"><img class="img-responsive col-xs-12" src="images/socialicons/instagramicon.svg"title="Instagram"/></a></div>
 				</div>
-				<a href="index.php"><img src="images/centerlogo.png" class="img-responsive" id="centerlogo" alt="Vice District Brewing Co."/></a>
+				<a href="/"><img src="images/centerlogo.png" class="img-responsive" id="centerlogo" alt="Vice District Brewing Co."/></a>
 			</div>
 			<div class="bannerbottom">
 				<nav class="navbar hidden-xs">

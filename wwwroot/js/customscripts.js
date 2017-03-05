@@ -48,13 +48,13 @@ $(function() {
 	});
 
 	$('.bannerbottom a').each(function() {
-		if ($(this).prop('href') == [location.protocol, '//', location.host, location.pathname].join('')) {
+		if ($(this).prop('href') == [location.protocol, '//', location.host, location.pathname, '.php'].join('')) {
 		  $('li', this).attr('style', 'border-bottom: 2px solid rgba(255, 255, 255, 1) !important;');
 		}
 	});
 
 	$('.fixedlink a').each(function() {
-		if ($(this).prop('href') == [location.protocol, '//', location.host, location.pathname].join('')) {
+		if ($(this).prop('href') == [location.protocol, '//', location.host, location.pathname, '.php'].join('')) {
 		  $('.fixedtext', this).attr('style', 'border-bottom: 2px solid rgba(255, 255, 255, 1) !important;');
 		}
 	});
