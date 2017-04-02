@@ -2,7 +2,8 @@
 <div class="row row-content panelpadding mobileevent">
    <div class="media">
       <div class="media-body">
-         <h2 class="media-heading"><perch:events id="eventTitle" /><span class="badge pull-right"><perch:events id="eventDateTime" format="m/d/y" /> <perch:events id="eventDateTime" format="%l:%M%p" /></span></h2>
+         <h2 class="media-heading"><perch:events id="eventTitle" /><span class="badge pull-right"><perch:events id="eventDateTime" format="m/d/y" /> <perch:events id="eventDateTime" format="g:ia" /> <perch:if id="eventShowEndTime" value="1"><perch:events id="eventDateTimeEnd" format="- g:ia"/>
+         </perch:if></span></h2>
          <perch:if exists="eventLocation"><h3><perch:events id="eventLocation" /></h3></perch:if>
          <p><perch:events id="eventDescHTML" encode="false"/></p>
          <perch:if exists="eventLinkURL">

@@ -48,13 +48,13 @@ $(function() {
 	});
 
 	$('.bannerbottom a').each(function() {
-		if ($(this).prop('href') == [location.protocol, '//', location.host, location.pathname, '.php'].join('')) {
+		if ($(this).prop('href') == [location.protocol, '//', location.host, location.pathname].join('')) {
 		  $('li', this).attr('style', 'border-bottom: 2px solid rgba(255, 255, 255, 1) !important;');
 		}
 	});
 
 	$('.fixedlink a').each(function() {
-		if ($(this).prop('href') == [location.protocol, '//', location.host, location.pathname, '.php'].join('')) {
+		if ($(this).prop('href') == [location.protocol, '//', location.host, location.pathname].join('')) {
 		  $('.fixedtext', this).attr('style', 'border-bottom: 2px solid rgba(255, 255, 255, 1) !important;');
 		}
 	});
@@ -108,6 +108,9 @@ $(function() {
 	document.getElementById("ageVerified").addEventListener("click", function(){
 		createCookie('verifiedAgeVDB','true',10);
 		$("#ageModal").modal('hide');
+		$('body').css({
+			position:'relative'
+		});
 	});
 
 	document.getElementById("ageNotVerified").addEventListener("click", function(){
@@ -131,6 +134,9 @@ $(function() {
 				keyboard: false
 			});
 			$("#ageModal").modal('show');
+			$('body').css({
+		      position:'fixed'
+		   });
 		}
 
 		$('#form1_nfpcheck').removeAttr("checked");

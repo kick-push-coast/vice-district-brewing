@@ -7,7 +7,7 @@
 <div class="vevent event publiceventtrigger <perch:if id="category_slugs" match="contains" value="private-event">privateeventtrigger</perch:if><perch:if id="category_slugs" match="contains" value="festival">festivaleventtrigger</perch:if>">
    <perch:if id="category_slugs" match="contains" value="public-event">
       <div>Public Event</div>
-      <button type="" class="btn" data-toggle="modal" data-target="#<perch:events id="eventSlug" />"><span class="time dtstart"><span class="value-title" title="<perch:events id="eventDateTime" format="c" />"><perch:events id="eventDateTime" format="%l:%M%p" /></span> </span>
+      <button type="" class="btn" data-toggle="modal" data-target="#<perch:events id="eventSlug" />"><span class="time dtstart"><span class="value-title" title="<perch:events id="eventDateTime" format="c"" />"><perch:events id="eventDateTime" format="g:ia" /></span> </span>
    </br><span class="summary <perch:events id="category_slugs" />"><perch:events id="eventTitle" /></span>
       </button>
 
@@ -15,7 +15,7 @@
 
    <perch:if id="category_slugs" match="contains" value="festival">
       <div>Festival</div>
-      <button type="" class="btn" data-toggle="modal" data-target="#<perch:events id="eventSlug" />"><span class="time dtstart"><span class="value-title" title="<perch:events id="eventDateTime" format="c" />"><perch:events id="eventDateTime" format="%l:%M%p" /></span> </span>
+      <button type="" class="btn" data-toggle="modal" data-target="#<perch:events id="eventSlug" />"><span class="time dtstart"><span class="value-title" title="<perch:events id="eventDateTime" format="c" />"><perch:events id="eventDateTime" format="g:ia" /></span> </span>
    </br><span class="summary <perch:events id="category_slugs" />"><perch:events id="eventTitle" /></span>
       </button>
    </perch:if>
@@ -26,7 +26,7 @@
       <div>
          <span class="time dtstart">
             <span class="value-title" title="<perch:events id="eventDateTime" format="c" />">
-               <perch:events id="eventDateTime" format="%l:%M%p" />
+               <perch:events id="eventDateTime" format="g:ia" />
                <perch:if id="eventShowEndTime" value="1">
                   <perch:events id="eventDateTimeEnd" format="- g:ia"/>
                </perch:if>
