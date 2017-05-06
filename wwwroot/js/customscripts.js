@@ -141,7 +141,69 @@ $(function() {
 
 		$('#form1_nfpcheck').removeAttr("checked");
 
+		var maxLength = 300;
+		function bindMoreEvent() {
+		   $(".show-read-more").each(function(){
+		       var myStr = $(this).text();
+		       if($.trim(myStr).length > maxLength){
+		           var newStr = myStr.substring(0, maxLength);
+		           var removedStr = myStr.substring(maxLength, $.trim(myStr).length);
+		           $(this).empty().html(newStr);
+		           $(this).append(' <a href="javascript:void(0);" class="read-more">More</a>');
+		           $(this).append('<span class="more-text more-text-hide">' + removedStr + '</span>');
+		           $(this).append(' <a href="javascript:void(0);" class="read-less more-text-hide">Less</a>');
+		       }
+		   });
+		   $(".read-more").click(function(){
+				$(this).siblings(".more-text").removeClass('more-text-hide');
+				$(this).siblings(".read-less").removeClass('more-text-hide');
+				$(this).addClass('more-text-hide');
+			});
+			$(".read-less").click(function(){
+				$(this).siblings(".more-text").addClass('more-text-hide');
+				$(this).siblings(".read-more").removeClass('more-text-hide');
+				$(this).addClass('more-text-hide');
+			});
+		}
+		bindMoreEvent();
+
+		var currentPost = 4;
+		var category;
+      $(".loadMore").click(function(){
+
+			if(getParameter('cat')) {
+				category = getParameter('cat');
+			}
+
+      	$.ajax({
+             type: 'POST',
+             url: '../blog/load.php',
+				 data: { currentPost : currentPost,
+				 			category : category },
+				 dataType: 'json',
+             success: function(data) {
+                 $(".bloglist").append(data.html);
+					  $(".bloglist").append(data.hasNext);
+					  bindMoreEvent();
+					  currentPost += 3;
+					  if(data.hasNext=="") {
+						  $(".loadMore").hide();
+					  }
+             }
+         });
+	   });
+
 	});
+
+	function getParameter(name, url) {
+	    if (!url) url = window.location.href;
+	    name = name.replace(/[\[\]]/g, "\\$&");
+	    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+	        results = regex.exec(url);
+	    if (!results) return null;
+	    if (!results[2]) return '';
+	    return decodeURIComponent(results[2].replace(/\+/g, " "));
+	}
 
 	var fixedCls = '.fixedbanner';
    var oldSSB = $.fn.modal.Constructor.prototype.setScrollbar;
@@ -156,5 +218,7 @@ $(function() {
      oldRSB.apply(this);
      $(fixedCls).css('padding-right', '');
    }
+
+
 
 });

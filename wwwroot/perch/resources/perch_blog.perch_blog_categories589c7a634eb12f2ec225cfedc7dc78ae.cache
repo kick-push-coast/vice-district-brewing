@@ -1,0 +1,8 @@
+
+<h3>Categories</h3>
+<ul>
+
+    <li><a href="archive.php?cat=news">News (4)</a></li>
+
+    <li><a href="archive.php?cat=events">Events (2)</a></li>
+</ul>

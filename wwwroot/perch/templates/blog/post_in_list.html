@@ -1,0 +1,11 @@
+<li class="blogentry">
+   <h2><a href="<perch:blog id="postURL" />" rel="bookmark" class="blogentrytitle"><perch:blog id="postTitle" /></a></h2>
+
+   <p class="entry-published date"><perch:blog id="postDateTime" format="%d %B %Y" /></p>
+
+   <div class="description entry-summary show-read-more">
+      <perch:blog id="postDescHTML" type="textarea" label="Post" order="2" editor="markitup" markdown="true" size="xxl autowidth" required="true" />
+   </div>
+
+   <perch:if exists="image"><img src="<perch:blog id="image" type="image" width="50" height="50" crop="true" />" alt="<perch:blog id="postTitle" />" /></perch:if>
+</li>
