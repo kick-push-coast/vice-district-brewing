@@ -12,13 +12,13 @@
     <link href="../css/cleancomplete.css" rel="stylesheet">
 	 <link href="blog.css" rel="stylesheet">
 
-	<link rel="icon" href="../images/icon.png">
+    <link rel="icon" href="../images/icon.png">
 
-   <!-- Google Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Bungee+Inline" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Inline" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -27,9 +27,29 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <!-- Facebook Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+    document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '207875076388501'); // Insert your pixel ID here.
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=207875076388501&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- DO NOT MODIFY -->
+    <!-- End Facebook Pixel Code -->
+
+
+
   </head>
+
   <body>
      <?php include_once("../analyticstracking.php") ?>
+
 
      <div class="modal fade" id="ageModal" tabindex="-1" role="dialog" aria-labelledby="ageModalLabel" aria-hidden="true">
        <div class="modal-dialog" role="document">
@@ -193,44 +213,38 @@
 		</div>
 
 
-		<h1>Blog</h1>
+
+
 		<div class="blog">
 			<div class="bloglistsection">
+            <h1>What's New</h1>
 				<div class="blogblock">
-					<!-- this is an example blog homepage showing a simple call to perch_blog_recent_posts()
 
-					Posts are displayed using the templates stored in perch/apps/perch_blog/templates/blog you can edit these as you wish, making sure that the
-					paths used in these templates are correct for your installation.
-					 -->
 					 <ul class="bloglist">
 						 <?php
 							 perch_blog_custom(array(
-							   'count'      => 3,
+							   'count'      => 5,
 							   'template'   => 'post_in_list.html',
 							   'sort'       => 'postDateTime',
 							   'sort-order' => 'DESC',
 							 ));
 						 ?>
 				 	</ul>
-				   <a href="javascript:void(0);" class="loadMore">More Posts</a>
+               <div class="loadMore">
+   				   <a href="javascript:void(0);">More Posts <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a>
+               </div>
 
 			 	</div>
 			</div>
 
 			<div class="blogsidebarsection">
+            <h1>&nbsp;</h1>
 				<nav class="blogsidebar">
-					<h2>Filter Posts</h2>
-				    <!-- The following functions are different ways to display archives. You can use any or all of these.
+					<h2>Show:</h2>
 
-				    All of these functions can take a parameter of a template to overwrite the default template, for example:
-
-				    perch_blog_categories('my_template.html');
-
-				    -->
 				    <!--  By category listing -->
 				    <?php perch_blog_categories(); ?>
-				    <!--  By year and then month - can take parameters for two templates. The first displays the years and the second the months see the default templates for examples -->
-				    <?php perch_blog_date_archive_months(); ?>
+
 				 </nav>
 			</div>
 

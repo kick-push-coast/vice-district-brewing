@@ -46,8 +46,10 @@
 
 
   </head>
+
   <body>
      <?php include_once("../analyticstracking.php") ?>
+
 
      <div class="modal fade" id="ageModal" tabindex="-1" role="dialog" aria-labelledby="ageModalLabel" aria-hidden="true">
        <div class="modal-dialog" role="document">
@@ -214,24 +216,39 @@
 
 
 		<div class="blog">
-			<div class="bloglistsection postblock">
-            <a href="/blog"><h1><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> What's New</h1></a>
+			<div class="bloglistsection">
+            <h1>What's New</h1>
 				<div class="blogblock">
-					<!-- this is an example blog homepage showing a simple call to perch_blog_recent_posts()
 
-					Posts are displayed using the templates stored in perch/apps/perch_blog/templates/blog you can edit these as you wish, making sure that the
-					paths used in these templates are correct for your installation.
-					 -->
 					 <ul class="bloglist">
-						 <?php perch_blog_post(perch_get('s')); ?>
+						 <?php
+							 perch_blog_custom(array(
+							   'count'      => 5,
+							   'template'   => 'post_in_list.html',
+							   'sort'       => 'postDateTime',
+							   'sort-order' => 'DESC',
+							 ));
+						 ?>
 				 	</ul>
                <div class="loadMore">
-   				   <a href="javascript:void(0);">Show More <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a>
+   				   <a href="javascript:void(0);">More Posts <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a>
                </div>
 
 			 	</div>
 			</div>
 
+			<div class="blogsidebarsection">
+            <h1>&nbsp;</h1>
+				<nav class="blogsidebar">
+					<h2>Show:</h2>
+
+				    <!--  By category listing -->
+				    <?php perch_blog_categories(array(
+                  'include-empty' => 'false'
+                )); ?>
+
+				 </nav>
+			</div>
 
 		</div>
 	</div>

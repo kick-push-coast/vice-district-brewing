@@ -27,23 +27,6 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <!-- Facebook Pixel Code -->
-    <script>
-    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
-    document,'script','https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '207875076388501'); // Insert your pixel ID here.
-    fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=207875076388501&ev=PageView&noscript=1"
-    /></noscript>
-    <!-- DO NOT MODIFY -->
-    <!-- End Facebook Pixel Code -->
-
-
   </head>
   <body>
      <?php include_once("../analyticstracking.php") ?>
@@ -371,7 +354,9 @@
 
 		   		  -->
 		   		  <!--  By category listing -->
-                 <?php perch_blog_categories(); ?>
+                 <?php perch_blog_categories(array(
+                   'include-empty' => 'false'
+                 )); ?>
 		   		  <!--  By year and then month - can take parameters for two templates. The first displays the years and the second the months see the default templates for examples -->
 		   		  <!-- <?php perch_blog_date_archive_months(); ?> -->
 		   	  </nav>

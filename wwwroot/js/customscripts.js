@@ -141,39 +141,61 @@ $(function() {
 
 		$('#form1_nfpcheck').removeAttr("checked");
 
-		var maxLength = 300;
-		function bindMoreEvent() {
-		   $(".show-read-more").each(function(){
-		       var myStr = $(this).text();
-		       if($.trim(myStr).length > maxLength){
-		           var newStr = myStr.substring(0, maxLength);
-		           var removedStr = myStr.substring(maxLength, $.trim(myStr).length);
-		           $(this).empty().html(newStr);
-		           $(this).append(' <a href="javascript:void(0);" class="read-more">More</a>');
-		           $(this).append('<span class="more-text more-text-hide">' + removedStr + '</span>');
-		           $(this).append(' <a href="javascript:void(0);" class="read-less more-text-hide">Less</a>');
-		       }
-		   });
-		   $(".read-more").click(function(){
-				$(this).siblings(".more-text").removeClass('more-text-hide');
-				$(this).siblings(".read-less").removeClass('more-text-hide');
-				$(this).addClass('more-text-hide');
-			});
-			$(".read-less").click(function(){
-				$(this).siblings(".more-text").addClass('more-text-hide');
-				$(this).siblings(".read-more").removeClass('more-text-hide');
-				$(this).addClass('more-text-hide');
-			});
-		}
-		bindMoreEvent();
+		// var maxLength = 300;
+		// function bindMoreEvent() {
+		//    $(".show-read-more").each(function(){
+		//        var myStr = $(this).text();
+		//        if($.trim(myStr).length > maxLength){
+		//            var newStr = myStr.substring(0, maxLength);
+		//            var removedStr = myStr.substring(maxLength, $.trim(myStr).length);
+		//            $(this).empty().html(newStr);
+		//            $(this).append(' <a href="javascript:void(0);" class="read-more">More</a>');
+		//            $(this).append('<span class="more-text more-text-hide">' + removedStr + '</span>');
+		//            $(this).append(' <a href="javascript:void(0);" class="read-less more-text-hide">Less</a>');
+		//        }
+		//    });
+		//    $(".read-more").click(function(){
+		// 		$(this).siblings(".more-text").removeClass('more-text-hide');
+		// 		$(this).siblings(".read-less").removeClass('more-text-hide');
+		// 		$(this).addClass('more-text-hide');
+		// 	});
+		// 	$(".read-less").click(function(){
+		// 		$(this).siblings(".more-text").addClass('more-text-hide');
+		// 		$(this).siblings(".read-more").removeClass('more-text-hide');
+		// 		$(this).addClass('more-text-hide');
+		// 	});
+		// }
+		// bindMoreEvent();
 
-		var currentPost = 4;
+		var currentPost = 6;
 		var category;
-      $(".loadMore").click(function(){
 
-			if(getParameter('cat')) {
-				category = getParameter('cat');
+		if(getParameter('cat')) {
+			category = getParameter('cat');
+		}
+
+		$(".catLink").each(function(){
+			if (this.id == category) {
+				$(this).addClass('linkunderline');
 			}
+			else if (window.location.pathname == '/blog/') {
+				$(".catLinkAll").addClass('linkunderline');
+			}
+		});
+
+		$.ajax({
+			 type: 'POST',
+			 url: '../blog/check.php',
+			 data: { category : category },
+			 dataType: 'json',
+			 success: function(data) {
+				  if(data.hasNext!="") {
+					  $(".loadMore").show();
+				  }
+			 }
+		});
+
+      $(".loadMore").click(function(){
 
       	$.ajax({
              type: 'POST',
@@ -183,9 +205,8 @@ $(function() {
 				 dataType: 'json',
              success: function(data) {
                  $(".bloglist").append(data.html);
-					  $(".bloglist").append(data.hasNext);
-					  bindMoreEvent();
-					  currentPost += 3;
+					//   bindMoreEvent();
+					  currentPost += 5;
 					  if(data.hasNext=="") {
 						  $(".loadMore").hide();
 					  }

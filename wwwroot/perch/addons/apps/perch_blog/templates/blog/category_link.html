@@ -1,6 +1,6 @@
 <perch:before>
-<h3>Categories</h3>
-<ul>
+<ul class="catlinklist">
+<li><a href="/blog" class="catLinkAll">All</a></li>
 </perch:before>
-    <li><a href="archive.php?cat=<perch:category id="catSlug" />"><perch:category id="catTitle" /> (<perch:category id="count.blog.post" when-empty="0" />)</a></li>
+    <li><a href="archive.php?cat=<perch:category id="catSlug" />" class="catLink" id="<perch:category id="catSlug" />"><perch:category id="catTitle" /></a></li>
 <perch:after></ul></perch:after>
