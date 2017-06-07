@@ -51,12 +51,18 @@ $(function() {
 		if ($(this).prop('href') == [location.protocol, '//', location.host, location.pathname].join('')) {
 		  $('li', this).attr('style', 'border-bottom: 2px solid rgba(255, 255, 255, 1) !important;');
 		}
+		else if ($(this).prop('href') == [location.protocol, '//', location.host, '/blog'].join('')) {
+			$('li', this).attr('style', 'border-bottom: 2px solid rgba(255, 255, 255, 1) !important;');
+		}
 	});
 
 	$('.fixedlink a').each(function() {
 		if ($(this).prop('href') == [location.protocol, '//', location.host, location.pathname].join('')) {
 		  $('.fixedtext', this).attr('style', 'border-bottom: 2px solid rgba(255, 255, 255, 1) !important;');
 		}
+		else if ($(this).prop('href') == [location.protocol, '//', location.host, '/blog'].join('')) {
+			$('.fixedtext', this).attr('style', 'border-bottom: 2px solid rgba(255, 255, 255, 1) !important;');
+ 		}
 	});
 
 	$('#closesignup').click(function() {

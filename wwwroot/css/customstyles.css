@@ -28,7 +28,7 @@ html {
 }
 
 #ageModal {
-	background-color: rgba(0,0,0,.7);
+	background-color: rgba(0,0,0,.9);
 }
 
 #ageModal .modal-dialog{
@@ -1592,6 +1592,7 @@ html {
 
 .address {
 	text-align: center;
+	margin: 5% 0;
 }
 
 .contactemail {
@@ -1805,7 +1806,7 @@ html {
 	flex-basis: 0;
 	padding: 5px 0;
 	margin-top: 15px;
-	font-family: VDBFont, "Trebuchet MS", Helvetica, sans-serif;
+	font-family: "Montserrat", sans-serif
 }
 
 
@@ -1878,7 +1879,7 @@ html {
 	padding: 10px 10px 10px 10px;
 	width: 100%;
 	height: auto;
-	box-shadow: -5px 5px 10px #0D0D0D;
+	box-shadow: ;
 	border-bottom: 0.5px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -2490,6 +2491,26 @@ html {
 	}
 	.story {
 		line-height: normal;
+	}
+	.panel-group .panel+.panel {
+		margin: 0;
+	}
+	.panel>.panel-heading {
+		border-bottom:0.5px solid rgba(255, 255, 255, 0.1);
+	}
+	.bottompanels {
+		margin-top:0;
+		box-shadow:none;
+	}
+	.bottompanelsflex>:first-child {
+		margin-right:0;
+		border-right:0.5px solid rgba(255, 255, 255, 0.1);
+	}
+	.bottompanelsflex>:last-child {
+		margin-left: 0;
+	}
+	.panel>.panel-heading#panelmobile {
+		border:0;
 	}
 
 }

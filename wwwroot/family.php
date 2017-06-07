@@ -102,6 +102,14 @@
  						</div>
  					</a>
  				</div>
+            <div class="fixedlink ">
+ 					<div class="row fixedpadding"></div>
+ 					<a href="blog/">
+ 						<div class="fixedtext">
+ 							News
+ 						</div>
+ 					</a>
+ 				</div>
  				<div class="fixedlink ">
  					<div class="row fixedpadding"></div>
  					<a href="contact.php">
@@ -148,11 +156,11 @@
 							<a href="calendar.php">
 								<li id="navinners">Calendar</li>
 							</a>
+                     <a href="blog/">
+								<li id="navinners">News</li>
+							</a>
 							<a href="contact.php">
 								<li id="navinners">Contact</li>
-							</a>
-							<a class="gearlink">
-								<li id="navinners"><span id="geartitle">Gear</span><span id="gearwarning">Coming Soon</span></li>
 							</a>
 						</div>
 					</ul>
@@ -195,6 +203,11 @@
 						<a href="calendar.php">
 							<div class="mobileinners">
 								<div>Calendar</div>
+							</div>
+						</a>
+                  <a href="blog/">
+							<div class="mobileinners">
+								<div>News</div>
 							</div>
 						</a>
                   <a href="contact.php">
@@ -281,6 +294,9 @@
 				</a>
 				<a href="calendar.php" class="sitemapinners">
 					Calendar
+				</a>
+            <a href="blog/" class="sitemapinners">
+					Blog
 				</a>
 				<a href="contact.php" class="sitemapinners">
 					Contact
