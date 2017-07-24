@@ -8,6 +8,8 @@
       <perch:input type="email" id="contactemail" required="true" label="Email" placeholder="Your E-Mail Address" />
       <perch:error for="contactemail" type="required">Please add your email address</perch:error>
       <perch:error for="contactemail" type="format">Please check your email address</perch:error>
+
+      <div class="hidehp">Leave this field blank: <perch:input type="text" id="banana" antispam="honeypot" /></div>
    </div>
 
    <perch:input type="submit" id="submit" value="Send" />

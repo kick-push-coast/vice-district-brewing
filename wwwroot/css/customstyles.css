@@ -25,6 +25,17 @@ body {
 
 html {
   height: 100vh;
+  display: none;
+}
+
+.container {
+   opacity: 0;
+	-webkit-transition: -webkit-transform .7s ease;
+}
+
+.loadfloat {
+	-webkit-transform:translate(0px,30px);
+	transform:translate(0px,30px);
 }
 
 #ageModal {
@@ -88,6 +99,7 @@ html {
 	position: fixed;
 	top: 0;
 	z-index: 10;
+	margin-top: -4.8vw;
 	width: inherit;
 	text-align: center;
 	color: #fff;
@@ -97,7 +109,7 @@ html {
 	font-size: 1.6vw;
 	border-bottom: 2px solid #dbae51;
 	display: none;
-	opacity: 0;
+	/*opacity: 0;*/
 	pointer-events: none;
 	overflow: hidden;
 }
@@ -202,8 +214,8 @@ html {
 	height: 25.863%;
 	top: 10.06%;
 	left: 0;
-	padding-left: .4vmax;
-	padding-right: 1vmax;
+	padding-left: .4vw;
+	padding-right: 1vw;
 	display: -webkit-box;
 	display: -moz-box;
 	display: -ms-flexbox;
@@ -242,7 +254,6 @@ html {
 #socialinners img:hover {
 	filter: grayscale(0%);
 	filter: drop-shadow( 0 0 3px #fff);
-
 }
 
 #emailsignup {
@@ -252,14 +263,14 @@ html {
 	height: 70%;
 	width: 28%;
 	background-color: rgba(255, 255, 255, 0.6);
-	margin-right: -34vmax;
+	margin-right: -34vw;
 	border-radius: 0 0 0 20px !important;
 }
 
 .signupheader {
 	font-family: 'Rock Salt', Helvetica, serif;
 	font-size: 2.1vw;
-	padding-top: 1.1vmax;
+	padding-top: 1.1vw;
 	color: rgba(178, 0, 0, 1);
 }
 
@@ -339,7 +350,7 @@ html {
 	text-align: center;
 	color: #d1cece;
 	font-family: 'Bungee Inline', cursive, "Trebuchet MS", Helvetica, sans-serif;
-	font-size: 1.1vmax;
+	font-size: 1.1vw;
 	letter-spacing: 5px;
 	-webkit-flex-grow: 1;
 	flex-grow: 1;
@@ -463,12 +474,12 @@ html {
 
 .panel-title {
 	padding: 12px;
-	font-size: 4.5vmax;
+	font-size: 4.5vw;
 	border: 0;
 }
 
 .panel-title > .glyphicon{
-	font-size: 3vmax;
+	font-size: 3vw;
 }
 
 .panel-body {
@@ -514,11 +525,11 @@ html {
 
 .media-body {
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
-	font-size: 1vmax;
+	font-size: 1vw;
 }
 
 .media-body h3 {
-	font-size: 1.3vmax;
+	font-size: 1.3vw;
 	color: #7c1010;
 	font-weight: bold;
 }
@@ -529,14 +540,14 @@ html {
 
 .media-heading {
 	font-family: 'Patua One', "Trebuchet MS", Helvetica, sans-serif;
-	font-size: 2.1vmax;
+	font-size: 2.1vw;
 	color: #dbae51;
 	border-bottom: 0.5px solid rgba(255,255,255,0.6);
 }
 
 .badge {
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
-	font-size: 1.2vmax;
+	font-size: 1.2vw;
 	background-color: transparent;
 	border: 1px dashed #fff;
 }
@@ -568,7 +579,7 @@ html {
 	box-shadow: -5px 5px 10px #0D0D0D;
 	flex-grow: 1;
 	flex-basis: 0;
-	font-size: 2.5vmax;
+	font-size: 2.5vw;
 	text-align: center;
 	margin-top: 12px;
 }
@@ -582,7 +593,7 @@ html {
 }
 
 .bottompanels .glyphicon {
-	font-size: 1.5vmax;
+	font-size: 1.5vw;
 }
 
 .beericons {
@@ -593,7 +604,7 @@ html {
 }
 
 .panellink {
-	font-size: 1.5vmax;
+	font-size: 1.5vw;
 	color: #dbae51;
 	font-family: 'Bungee Inline', cursive, "Trebuchet MS", Helvetica, sans-serif;
 	padding-right: 8px;
@@ -605,7 +616,7 @@ html {
 }
 
 .panellink > .glyphicon {
-	font-size: 1.4vmax;
+	font-size: 1.4vw;
 }
 
 .panellink:hover {
@@ -681,6 +692,7 @@ html {
 	width: 50%;
 	background-color: rgba(1, 16, 40, 1);
 	box-shadow: -5px 0px 10px #0D0D0D;
+	-webkit-transition: -webkit-transform .7s ease;
 }
 
 .taproomright img {
@@ -691,6 +703,7 @@ html {
 	display: flex;
 	background-color: rgba(1, 16, 40, 1);
 	box-shadow: -5px 5px 10px #0D0D0D;
+	-webkit-transition: -webkit-transform .7s ease;
 }
 
 .taproombottom img {
@@ -720,8 +733,6 @@ html {
 	box-shadow: -5px 5px 10px #0D0D0D;
 	flex-grow: 1;
 	max-width: 40%;
-	display: flex;
-	flex-direction: column;
 }
 
 .ownersright {
@@ -1004,6 +1015,7 @@ html {
 	flex-grow: 1;
 	width: 60%;
 	background-color: rgba(1, 16, 40, .8);
+	-webkit-transition: -webkit-transform .7s ease;
 }
 
 .beersintroright img {
@@ -1453,7 +1465,7 @@ html {
 .sectionmessage {
 	padding: 0;
 	font-family: 'Montserrat', sans-serif;
-	font-size: 1.1vmax;
+	font-size: 1.1vw;
 	letter-spacing: 0.04em;
 	word-spacing: 0.3em;
 }
@@ -1470,7 +1482,7 @@ html {
 
 .reservationleft .vertalignp .sectionparagraph {
 	font-family: 'Montserrat', sans-serif;
-	font-size: 1.1vmax;
+	font-size: 1.1vw;
 	letter-spacing: 0.04em;
 	word-spacing: 0.3em;
 	margin: 20px 0 20px 0;
@@ -1479,7 +1491,7 @@ html {
 
 .reservationleft .vertalignp .sectionmessage {
 	font-family: 'Montserrat', sans-serif;
-	font-size: 1.1vmax;
+	font-size: 1.1vw;
 	letter-spacing: 0.04em;
 	word-spacing: 0.3em;
 	margin: 0 0 20px 0;
@@ -1600,6 +1612,10 @@ html {
 	border-bottom: 1px solid #dbae51;
 }
 
+.hidehp {
+	display:none;
+}
+
 .contactlink a {
 	font-size: 1.8vw;
 }
@@ -1612,6 +1628,7 @@ html {
 	padding: 6px;
 	background-color: rgba(1, 16, 40, 1);
 	box-shadow: -5px 5px 10px #0D0D0D;
+	-webkit-transition: -webkit-transform .7s ease;
 }
 
 .vertthankyou {display: flex;align-items:center;justify-content: center;width: 100%;height: 100%;color: #dbae51;font-family: VDBFont, "Trebuchet MS", Helvetica, sans-serif;font-size: 2vw}
@@ -1915,14 +1932,14 @@ html {
 
 .footerbegin {
 	background-color: #000;
-	font-size: 1.4vmax;
+	font-size: 1.4vw;
 	margin: 0;
 	padding: 0;
 	font-family: 'Bungee Inline', cursive, "Trebuchet MS", Helvetica, sans-serif;
 }
 
 .newsletterglyph {
-	font-size: 1.9vmax;
+	font-size: 1.9vw;
 	margin-left: -20px;
 	-webkit-transition: color .3s ease;
 	transition: color .3s ease;
@@ -1942,7 +1959,7 @@ html {
 
 .footertextleft {
 	text-align: right;
-	font-size: 1.5vmax;
+	font-size: 1.5vw;
 	border-style: solid;
 	border-top: 0;
 	border-bottom: 0;
@@ -1952,13 +1969,14 @@ html {
 .footertextright {
 	text-align: left;
 	position: inline;
-	font-size: 1.2vmax;
+	font-size: 1.2vw;
 }
 
 .footermap {
 	-webkit-filter: brightness(78%) grayscale(70%);
 	filter: brightness(78%) grayscale(70%);
 	-webkit-transition : -webkit-filter .3s linear;
+	transition : -webkit-filter .3s linear;
 	padding-left: 0;
 	margin: 0 auto;
 }
@@ -2083,35 +2101,35 @@ html {
 	#navinners {
 		line-height: 115%;
 		letter-spacing: 2px;
-		font-size: 0.9vmax;
+		font-size: 0.9vw;
 	}
 	.footersitemap {
 		border-top: 1px solid #fff;
 	}
 	.fixedbanner {
-		font-size: 1.3vmax;
+		font-size: 1.3vw;
 	}
 	.footertextleft {
 		text-align: center;
-		font-size: 1.5vmax;
+		font-size: 1.5vw;
 		border-right: 0;
 	}
 	.footertextright {
 		text-align: center;
 		border-left: 0;
 		border-top: 1px solid gray;
-		font-size: 1.5vmax;
+		font-size: 1.5vw;
 	}
 	.card {
 		font-size: 1.5vw;
 	}
 
 	.card-block h1 {
-		font-size: 2.2vmax;
+		font-size: 2.2vw;
 	}
 
 	.card-block h4 {
-		font-size: 1.4vmax;
+		font-size: 1.4vw;
 	}
 	.carddivider {
 		width: 100%;
@@ -2120,7 +2138,7 @@ html {
 		width: 100%;
 	}
 	.media-heading{
-		font-size: 1.9vmax;
+		font-size: 1.9vw;
 	}
 }
 
@@ -2240,8 +2258,6 @@ html {
 	}
 	.cardcollapse {
 		font-size: 3.8vw;
-		padding-left: 2vw;
-		padding-right: 2vw;
 	}
 	.panelpadding {
 		margin-left: 0;
@@ -2279,6 +2295,7 @@ html {
 	}
 	.panel-heading {
 		margin: 0;
+		padding: 13px 6px !important;
 	}
 	.media-heading {
 		text-align: center;
@@ -2484,6 +2501,7 @@ html {
 		font-family: 'Bungee Inline', cursive, "Trebuchet MS", Helvetica, sans-serif;
 		letter-spacing: normal;
 		font-size: 4vw;
+		overflow: hidden;
 	}
 	.mobileaddress a {
 		text-align: center;
@@ -2512,10 +2530,17 @@ html {
 	.panel>.panel-heading#panelmobile {
 		border:0;
 	}
+	.loadfloat {
+		-webkit-transform:translate(0px,0px);
+		transform:translate(0px,0px);
+	}
 
 }
 
 @font-face {
 	font-family: VDBFont;
-	src: url("../fonts/VDBFont.otf") format("opentype");
+	src: url('../fonts/VDBFont.eot'); /* IE9 Compat Modes */
+  	src: url('../fonts/VDBFont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('../fonts/VDBFont.otf') format('opentype'),
+        url('../fonts/VDBFont.ttf')  format('truetype'); /* Safari, Android, iOS */
 }

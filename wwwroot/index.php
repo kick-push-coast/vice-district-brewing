@@ -42,26 +42,22 @@
     <!-- DO NOT MODIFY -->
     <!-- End Facebook Pixel Code -->
 
+    <!-- No JS fallbacks -->
+    <noscript>
+      <style>
+         html{display:block}
+         .container{opacity:1}
+         .loadfloat {-webkit-transform:translate(0px,0px);transform:translate(0px,0px);}
+         #emailsignup{margin-right:0}
+         .collapse {display: block;}
+      </style>
+    </noscript>
+
   </head>
   <body>
      <?php include_once("analyticstracking.php") ?>
 
-     <div class="modal fade" id="ageModal" tabindex="-1" role="dialog" aria-labelledby="ageModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-           <div class="modal-content">
-             <div class="modal-header">
-                <img class="img-responsive center-block" src="images/centerlogo.png"/>
-             </div>
-             <div class="modal-body">
-                <p id="ageVerifyMessage">Are you 21 years of age or older?</p>
-             </div>
-             <div class="modal-footer">
-                <button type="button" class="btn btn-primary" id="ageVerified">Yes</button>
-                <button type="button" class="btn btn-secondary" id="ageNotVerified">No</button>
-             </div>
-          </div>
-       </div>
-    </div>
+     <?php include("templates/agemodal.php") ?>
 
      <div id="fixedbanner" class="fixedbanner hidden-xs">
         <div class="fixedflex">
@@ -72,7 +68,7 @@
           </div>
           <div class="fixedlink ">
              <div class="row fixedpadding"></div>
-             <a href="taproom.php">
+             <a href="/taproom">
                 <div class="fixedtext">
                   Taproom
                </div>
@@ -80,7 +76,7 @@
 				</div>
 				<div class="fixedlink ">
 					<div class="row fixedpadding"></div>
-					<a href="family.php">
+					<a href="/family">
 						<div class="fixedtext">
 							Family
 						</div>
@@ -88,7 +84,7 @@
 				</div>
 				<div class="fixedlink ">
 					<div class="row fixedpadding"></div>
-					<a href="beer.php">
+					<a href="/beer">
 						<div class="fixedtext">
 							Beer
 						</div>
@@ -96,7 +92,7 @@
 				</div>
 				<div class="fixedlink ">
 					<div class="row fixedpadding"></div>
-					<a href="calendar.php">
+					<a href="/calendar">
 						<div class="fixedtext">
 							Calendar
 						</div>
@@ -112,7 +108,7 @@
  				</div>
 				<div class="fixedlink ">
 					<div class="row fixedpadding"></div>
-					<a href="contact.php">
+					<a href="/contact">
 						<div class="fixedtext">
 							Contact
 						</div>
@@ -163,24 +159,24 @@
 				<nav class="navbar hidden-xs">
 					<ul class="nav list-unstyled">
 						<div id="navleft">
-							<a href="taproom.php">
+							<a href="/taproom">
 								<li id="navinners">Taproom</li>
 							</a>
-							<a href="family.php">
+							<a href="/family">
 								<li id="navinners">Family</li>
 							</a>
-							<a href="beer.php">
+							<a href="/beer">
 								<li id="navinners">Beer</li>
 							</a>
 						</div>
 						<div id="navright">
-							<a href="calendar.php">
+							<a href="/calendar">
 								<li id="navinners">Calendar</li>
 							</a>
                      <a href="blog/">
 								<li id="navinners">News</li>
 							</a>
-							<a href="contact.php">
+							<a href="/contact">
 								<li id="navinners">Contact</li>
 							</a>
 						</div>
@@ -190,7 +186,7 @@
 		</div>
 	</div>
 
-	<div class="main container">
+	<div class="main container loadfloat">
       <div class="panel-group hidden-sm hidden-md hidden-lg hidden-xl">
 			<div class="panel panel-default">
 				<div class="panel-heading" id="panelmobile">
@@ -206,22 +202,22 @@
       					<div><a href="https://twitter.com/Vice_District"><img class="" src="images/socialicons/twittericon.svg" title="Twitter"/></a></div>
       					<div><a href="https://www.instagram.com/vice_district/"><img class="" src="images/socialicons/instagramicon.svg"title="Instagram"/></a></div>
       				</div>
-                  <a href="beer.php">
+                  <a href="/beer">
 							<div class="mobileinners">
 								<div>Beer</div>
 							</div>
 						</a>
-						<a href="taproom.php">
+						<a href="/taproom">
 							<div class="mobileinners">
 								<div>Taproom</div>
 							</div>
 						</a>
-                  <a href="family.php">
+                  <a href="/family">
 							<div class="mobileinners">
 								<div>Family</div>
 							</div>
 						</a>
-						<a href="calendar.php">
+						<a href="/calendar">
 							<div class="mobileinners">
 								<div>Calendar</div>
 							</div>
@@ -231,7 +227,7 @@
 								<div>News</div>
 							</div>
 						</a>
-                  <a href="contact.php">
+                  <a href="/contact">
 							<div class="mobileinners">
 								<div>Contact</div>
 							</div>
@@ -275,7 +271,7 @@
 						</div>
 						<div class="row">
 							<div class="col-xs-12">
-								<a href="family.php"><span class="pull-right panellink">More &nbsp;About &nbsp;Our &nbsp;Family<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></span></a>
+								<a href="/family"><span class="pull-right panellink">More &nbsp;About &nbsp;Our &nbsp;Family<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></span></a>
 							</div>
 						</div>
 
@@ -297,7 +293,7 @@
 
 						<div class="row">
 							<div class="col-xs-12">
-								<a href="beer.php"><span class="pull-right panellink">Complete &nbsp;Tap &nbsp;List<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></span></a>
+								<a href="/beer"><span class="pull-right panellink">Complete &nbsp;Tap &nbsp;List<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></span></a>
 							</div>
 						</div>
 
@@ -330,7 +326,7 @@
 
 						<div class="row">
 							<div class="col-xs-12">
-								<a href="calendar.php"><span class="pull-right panellink">Full &nbsp;Calendar<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></span></a>
+								<a href="/calendar"><span class="pull-right panellink">Full &nbsp;Calendar<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></span></a>
 							</div>
 						</div>
 
@@ -338,12 +334,12 @@
 				</div>
 			</div>
 
-         <div class="bottompanelsflex">
+         <div class="bottompanelsflex hidden-xs">
             <div class="bottompanels">
-               <a href="family.php#joblisting"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>Work With Us</a>
+               <a href="/family/index.php#joblisting"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>Work With Us</a>
             </div>
             <div class="bottompanels">
-               <a href="contact.php#FAQs">FAQs<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+               <a href="/contact/index.php#FAQs">FAQs<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
             </div>
          </div>
 
@@ -385,22 +381,22 @@
 
 		<div class="row text-center footerend">
 			<div class="col-xs-12 col-sm-6 sitemap">
-            <a href="taproom.php" class="sitemapinners">
+            <a href="/taproom" class="sitemapinners">
 					About
 				</a>
-				<a href="family.php" class="sitemapinners">
+				<a href="/family" class="sitemapinners">
 					Jobs
 				</a>
-				<a href="beer.php" class="sitemapinners">
+				<a href="/beer" class="sitemapinners">
 					Product
 				</a>
-				<a href="calendar.php" class="sitemapinners">
+				<a href="/calendar" class="sitemapinners">
 					Calendar
 				</a>
             <a href="blog/" class="sitemapinners">
 					Blog
 				</a>
-				<a href="contact.php" class="sitemapinners">
+				<a href="/contact" class="sitemapinners">
 					Contact
 				</a>
 			</div>
@@ -417,6 +413,11 @@
 
 	<!-- Custom JS Files -->
 	<script type="text/javascript" src="js/customscripts.js"></script>
+
+   <!-- Set current page to index -->
+   <script type="text/javascript">
+       var onIndex = true;
+   </script>
 
   </body>
 </html>

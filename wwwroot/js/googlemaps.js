@@ -15,7 +15,7 @@ var rooseveltStation = {lat: 41.867436, lng: -87.626642};
 
 
 
-$(document).ready(function () {
+$(window).load(function(){
     $("#soldierfield").on('click', function ()
     {
 	  $("a.selectedorigin").removeClass('selectedorigin');
@@ -73,6 +73,7 @@ $(document).ready(function () {
       document.getElementById('address').innerHTML = "1454 S Michigan Ave</br>Chicago, IL 60605";
       document.getElementById('address').href = "https://www.google.com/maps/place/Vice+District+Brewing+Company/@41.8624994,-87.6265913,17z/data=!3m1!4b1!4m5!3m4!1s0x880e2c8464f6131d:0x3907d1208eaa2804!8m2!3d41.8624994!4d-87.6244026";
    });
+   setTimeout(initMap, 700);
 });
 
 function initMap() {
@@ -165,14 +166,14 @@ function initMap() {
 			map: map,
 			draggable: false,
 			position: viceDistrict,
-			icon: "images/mapicons/viceicon.png"
+			icon: "../images/mapicons/viceicon.png"
 		});
 
       homewoodmarker = new google.maps.Marker({
          map: map,
          draggable: false,
          position: viceDistrictHomewood,
-			icon: "images/mapicons/viceicon.png"
+			icon: "../images/mapicons/viceicon.png"
       })
 
 		directionsDisplay = new google.maps.DirectionsRenderer({
