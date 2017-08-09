@@ -52,6 +52,14 @@ $(function() {
 		$(this).parent().find('.glyphicon-triangle-top').removeClass().addClass('glyphicon glyphicon-triangle-bottom');
 	});
 
+	$('.collapsemobile').on('show.bs.collapse', function (){
+		$(this).parent().find('.glyphicon-menu-hamburger').removeClass('glyphicon-menu-hamburger').addClass('glyphicon-remove-circle');
+	});
+
+	$('.collapsemobile').on('hide.bs.collapse', function (){
+		$(this).parent().find('.glyphicon-remove-circle').removeClass('glyphicon-remove-circle').addClass('glyphicon-menu-hamburger');
+	});
+
 	$('.bannerbottom a').each(function() {
 		var url = [location.protocol, '//', location.host, location.pathname].join('');
 		url = url.substring(0, url.lastIndexOf("/") + 1);

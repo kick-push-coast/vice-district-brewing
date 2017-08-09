@@ -5,7 +5,7 @@
             <a data-toggle="collapse" href="#collapsemobile"><h1 class="panel-title"  id="titlemobile"><span class="glyphicon glyphicon-menu-hamburger glyphmobile" aria-hidden="true"></span></h1></a>
          </h4>
       </div>
-      <div id="collapsemobile" class="panel-collapse collapse">
+      <div id="collapsemobile" class="panel-collapse collapse collapsemobile">
          <div class="panel-body" id="panelmobile">
             <div class="mobileinners" id="">
                <div><a href="https://www.yelp.com/biz/vice-district-taproom-chicago"><img class="" src="../images/socialicons/yelpicon.svg" title="Yelp"/></a></div>
